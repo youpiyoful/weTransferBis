@@ -1,0 +1,10 @@
+#on suit les liens symboliques
+
+Options +FollowSymLinks
+
+#Activation du mod rewrite d'apache
+
+RewriteEngine On
+
+RewriteRule ^home/$ index.php [L,QSA]
+

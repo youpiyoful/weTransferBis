@@ -1,0 +1,16 @@
+{% extends 'mail.html' %}
+
+{% block header %}
+
+	<h1>{{expediteur}} vous a envoyé des fichiers</h1>
+
+	<button type="button">Récupérez vos fichiers</button>
+
+{% endblock %}
+
+
+{% block section %}
+
+	<h2>Expéditeur : {{expediteur}}</h2>
+
+{% endblock %}

@@ -4,8 +4,6 @@
 require_once 'vendor/autoload.php';
 require_once('models/request.php');
 
-$loader = new Twig_Loader_Filesystem('./views');
-$twig = new Twig_Environment($loader, array('cache' => false));
 
 
 // fonction récupérer l'expéditeur
@@ -16,8 +14,8 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 
 // fonction récupérer le fichier
 
-var_dump($_POST);
+// var_dump($_POST);
 
-echo $twig->render('reception.html');
+// echo $twig->render('reception.html');
 
- header("Location: weTransfertBis/reception");
+header("Location: reception");

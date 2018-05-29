@@ -7,9 +7,9 @@ require_once('utils/bdd.php');
 
 function addDoc($nom,$message,$taille, $date, $lien){
     global $bdd;
-    $response = $bdd->prepare("SELECT * FROM fichier(`nom_f`,`message_f`, `taille_f`, `date_f`, `lien_f`) VALUES (:title, :memeURL,:newName_m, CURRENT_TIMESTAMP, :id_picture)");
+    $response = $bdd->prepare("SELECT * FROM fichier(`nom_f`,`message_f`, `taille_f`, `date_f`, `lien_f`) VALUES (:nom, :messageMail,:taille, CURRENT_TIMESTAMP, :lien)");
     $response->bindParam(":nom",$nom);
-    $response->bindParam(":message",$message);
+    $response->bindParam(":messageMail",$message);
     $response->bindParam(":taille",$taille);
     $response->bindParam(":date",$date);
     $response->bindParam(":lien",$lienURL);
@@ -23,7 +23,7 @@ function addDoc($nom,$message,$taille, $date, $lien){
 
 function addDestMail($mailDest){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO destinataire(`mail_d') VALUES (mailDest)");
+    $response = $bdd->prepare("INSERT INTO destinataire(`mail_d') VALUES (:mailDest)");
     $response->bindParam(":mailDest",$mailDest);
     $response->execute();
     return "true"; 
@@ -34,7 +34,7 @@ function addDestMail($mailDest){
 
 function addExpMail($mailExp){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO expediteur(`mail_ex') VALUES (mailExp)");
+    $response = $bdd->prepare("INSERT INTO expediteur(`mail_ex') VALUES (:mailExp)");
     $response->bindParam(":mailExp",$mailExp);
     $response->execute();
     return "true"; 

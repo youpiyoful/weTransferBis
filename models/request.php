@@ -13,7 +13,8 @@ function insertDoc($nom,$message,$taille, $date, $lien){
     $response->bindParam(":date",$date);
     $response->bindParam(":lien",$lienURL);
     $response->execute();
-    return "true"; 
+    $result = $response->lastinsertId();
+    return $result; 
 }    
 
 // Requête pour afficher les informations du document
@@ -39,9 +40,9 @@ function addDestMail($mailDest){
     $response = $bdd->prepare("INSERT INTO destinataire(`mail_d') VALUES (:mailDest)");
     $response->bindParam(":mailDest",$mailDest);
     $response->execute();
-    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+    $result = $response->lastinsertId();
 
-    return $result; 
+    return $result;
 }
 
 
@@ -52,8 +53,7 @@ function addExpMail($mailExp){
     $response = $bdd->prepare("INSERT INTO expediteur(`mail_ex') VALUES (:mailExp)");
     $response->bindParam(":mailExp",$mailExp);
     $response->execute();
-
-    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+    $result = $response->lastinsertId();
 
     return $result; 
 }
@@ -85,3 +85,21 @@ function removeExpMail(){
     return $result; 
 }
 
+//requête insérer dans table de liaison
+
+function tableLink($id_d, $id_f, $id_ex){
+    global $bdd;
+    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest('id_f', 'id_ex', 'id_d') VALUE (:id_f,   :id_ex,  :id_d");
+    $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
+    $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
+    $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
+
+    $response->execute();
+    // $result = $response->lastinsertId();
+
+    
+    // return $result;
+}
+
+
+//

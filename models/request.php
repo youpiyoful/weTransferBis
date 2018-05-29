@@ -26,7 +26,9 @@ function showDoc($nom,$message,$taille, $date, $lien){
     $response->bindParam(":date",$date);
     $response->bindParam(":lien",$lienURL);
     $response->execute();
-    return "true"; 
+    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result;
 }
 
 
@@ -37,7 +39,9 @@ function addDestMail($mailDest){
     $response = $bdd->prepare("INSERT INTO destinataire(`mail_d') VALUES (:mailDest)");
     $response->bindParam(":mailDest",$mailDest);
     $response->execute();
-    return "true"; 
+    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result; 
 }
 
 
@@ -48,7 +52,10 @@ function addExpMail($mailExp){
     $response = $bdd->prepare("INSERT INTO expediteur(`mail_ex') VALUES (:mailExp)");
     $response->bindParam(":mailExp",$mailExp);
     $response->execute();
-    return "true"; 
+
+    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result; 
 }
 
 
@@ -62,7 +69,10 @@ function removeDestMail(){
     global $bdd;
     $response = $bdd->prepare("DELETE FROM destinataire");
     $response->execute();
-    return "true";
+
+    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result;  
 }
 
 
@@ -70,6 +80,8 @@ function removeExpMail(){
     global $bdd;
     $response = $bdd->prepare("DELETE FROM expediteur");
     $response->execute();
-    return "true"; 
+    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result; 
 }
 

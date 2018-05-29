@@ -23,15 +23,15 @@ case '/weTransferBis/':
 require_once('controllers/home.php');
 break;
 
-// case '/weTransferBis/intermediaire':
-// case '/weTransferBis/intermediaire/':
-// require_once('controllers/intermediaire.php');
-// break;
+case '/weTransferBis/intermediaire':
+case '/weTransferBis/intermediaire/':
+require_once('controllers/intermediaire.php');
+break;
 
 
 case '/weTransferBis/reception':
 case '/weTransferBis/reception/':
-require_once('controllers/intermediaire.php');
+require_once('controllers/reception.php');
 break;
 
 

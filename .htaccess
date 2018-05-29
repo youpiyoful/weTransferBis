@@ -2,9 +2,12 @@
 
 Options +FollowSymLinks
 
-#Activation du mod rewrite d'apache
+#Activation du mode rewrite d'apache
 
 RewriteEngine On
 
 RewriteRule ^home/$ index.php [L,QSA]
 
+RewriteRule ^reception/$ index.php [L,QSA]
+
+#RewriteRule ^intermediaire/$ index.php [L,QSA]

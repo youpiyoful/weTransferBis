@@ -2,7 +2,7 @@
 
 Options +FollowSymLinks
 
-#Activation du mod rewrite d'apache
+#Activation du mode rewrite d'apache
 
 RewriteEngine On
 

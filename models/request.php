@@ -18,7 +18,6 @@ function addDoc($nom,$message,$taille, $date, $lien){
 }
 
 
-
 // 1- Requête pour insérer l'adresse mail du destinataire
 
 function addDestMail($mailDest){
@@ -51,7 +50,7 @@ function removeDestMail(){
     global $bdd;
     $response = $bdd->prepare("DELETE FROM destinataire");
     $response->execute();
-    return "true"; 
+    return "true";
 }
 
 
@@ -59,5 +58,5 @@ function removeExpMail(){
     global $bdd;
     $response = $bdd->prepare("DELETE FROM expediteur");
     $response->execute();
-    return "true"; 
+    return "true";
 }

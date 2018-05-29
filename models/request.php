@@ -3,9 +3,21 @@
 require_once('utils/bdd.php');
 
 
-// Requête pour selectionner le document à envoyer et l'insérer
+//Requête pour insérer le document à envoyer 
+function insertDoc($nom,$message,$taille, $date, $lien){
+    global $bdd;
+    $response = $bdd->prepare("INSERT into fichier(`nom_f`,`message_f`, `taille_f`, `date_f`, `lien_f`) VALUES (:nom, :messageMail,:taille, CURRENT_TIMESTAMP, :lien)");
+    $response->bindParam(":nom",$nom);
+    $response->bindParam(":messageMail",$message);
+    $response->bindParam(":taille",$taille);
+    $response->bindParam(":date",$date);
+    $response->bindParam(":lien",$lienURL);
+    $response->execute();
+    return "true"; 
+}    
 
-function addDoc($nom,$message,$taille, $date, $lien){
+// Requête pour afficher les informations du document
+function showDoc($nom,$message,$taille, $date, $lien){
     global $bdd;
     $response = $bdd->prepare("SELECT * FROM fichier(`nom_f`,`message_f`, `taille_f`, `date_f`, `lien_f`) VALUES (:nom, :messageMail,:taille, CURRENT_TIMESTAMP, :lien)");
     $response->bindParam(":nom",$nom);
@@ -18,7 +30,6 @@ function addDoc($nom,$message,$taille, $date, $lien){
 
     return $result;
 }
-
 
 
 // 1- Requête pour insérer l'adresse mail du destinataire
@@ -48,7 +59,7 @@ function addExpMail($mailExp){
 }
 
 
-// 3- Requête pour ["a définir"]
+// 3- Requête pour ["à définir"]
 
 
 // 4- Requête pour supprimer les données mails
@@ -58,6 +69,7 @@ function removeDestMail(){
     global $bdd;
     $response = $bdd->prepare("DELETE FROM destinataire");
     $response->execute();
+
     $result=$response->fetchAll(PDO::FETCH_ASSOC);
 
     return $result;  

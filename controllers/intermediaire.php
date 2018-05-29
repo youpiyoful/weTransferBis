@@ -19,3 +19,5 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 var_dump($_POST);
 
 echo $twig->render('reception.html');
+
+ header("Location: weTransfertBis/reception");

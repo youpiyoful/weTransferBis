@@ -4,16 +4,15 @@
 
 {% block section %}
 
-	<form id="form" method="post" action="intermediaire" enctype="multipart/form-data">
+	<form id="form" method="post" action="intermediaire" enctype="multipart/form-data"">
 
-	    <p>
+
 	        <input type="hidden" name="MAX_FILE_SIZE" value="32481010">
 	        <input class="button" type="file" name="upFile">
 	        <input type="text" name="destinataire">
 	        <input type="text" name="expediteur">
 	        <textarea name="message"></textarea>
 	        <input class="button" type="submit" name="upload" value="Envoyer">
-	    </p>
 
 	</form>
 

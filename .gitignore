@@ -3,5 +3,4 @@ vendor/
 composer.json
 composer.lock
 assets/css
-assets/scss
 .sass-cache/

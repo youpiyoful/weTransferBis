@@ -20,4 +20,4 @@ var_dump($_POST);
 
 echo $twig->render('reception.html');
 
- header("Location: weTransfertBis/reception");
+header("Location: weTransfertBis/reception");

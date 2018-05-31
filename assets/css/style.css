@@ -21,14 +21,19 @@
 .circle {
   background: white;
   border-radius: 100%;
-  color: white;
-  height: 100%;
-  font-weight: bold;
-  width: 100%;
-  display: table;
-  margin: 20px auto; }
+  color: white; }
 
 textarea {
   resize: none; }
+
+.testeuh {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,10 +4,13 @@
 require_once 'vendor/autoload.php';
 require_once('models/request.php');
 
-$loader = new Twig_Loader_Filesystem('./views');
-$twig = new Twig_Environment($loader, array('cache' => false));
 
+$message = $_POST['message'];
+$mailExp = $_POST['expediteur'];
+$mailDest = $_POST['destinataire'];
+$file = $_FILES['upFile'];
 
+$size = filesize($file);
 // fonction récupérer l'expéditeur
 
 // fonction récupérer le destinataire
@@ -16,8 +19,8 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 
 // fonction récupérer le fichier
 
-var_dump($_POST);
+// var_dump($_POST);
 
-echo $twig->render('reception.html');
+// echo $twig->render('reception.html');
 
-header("Location: weTransfertBis/reception");
+header("Location: reception");

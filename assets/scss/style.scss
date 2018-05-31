@@ -3,28 +3,33 @@
     font-family: "kiona";
     src: url('../fonts/Kiona-Regular.ttf');
     /*police*/
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: "roboto";
     src: url('../fonts/Roboto-Thin.ttf');
     /*police*/
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: "jenna sue";
     src: url('../fonts/JennaSue.ttf');
     /*police*/
-  }
+}
 
 //Fin partie Chaymaa
-
-
-
 
 //Partie Seb
 .bodyBg{
     background-color: #c0b6aa;
 }
 
+// .logo_p{
+    
+    // justify-items: flex-end;
+    // justify-content: flex-end;
+    // justify-content: center;
+// }
 
 .block {
     border: 1px solid red;
@@ -36,15 +41,26 @@
     background: white;
     border-radius: 100%;
     color: white;
-    height: 100%;
-    font-weight: bold;
-    width: 100%;
-    display: table;
-    margin: 20px auto;
+    // height: 100%;
+    // font-weight: bold;
+    // width: 100%;
+    // display: table;
+    // margin: 20px auto;
 }
 
 textarea {
     resize: none;
+}
+
+.testeuh { //a placer dans un média kiri
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 //Fin partie Seb

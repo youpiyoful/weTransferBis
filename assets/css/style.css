@@ -11,7 +11,7 @@
   src: url("../fonts/JennaSue.ttf");
   /*police*/ }
 .bodyBg {
-  background-color: rgba(185, 149, 105, 0.849); }
+  background-color: #c0B6aa; }
 
 .block {
   border: 1px solid red;

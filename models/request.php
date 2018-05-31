@@ -4,28 +4,27 @@ require_once('utils/bdd.php');
 
 
 //Requête pour insérer le document à envoyer 
-function insertDoc($nom,$message,$taille, $date, $lien){
+function insertDoc($nom,$message,$taille){
     global $bdd;
-    $response = $bdd->prepare("INSERT into fichier(`nom_f`,`message_f`, `taille_f`, `date_f`, `lien_f`) VALUES (:nom, :messageMail,:taille, CURRENT_TIMESTAMP, :lien)");
+    $response = $bdd->prepare("INSERT INTO fichier(nom_f, message_f, taille_f, date_f) VALUES (:nom, :messageMail,:taille, CURRENT_TIME)");
     $response->bindParam(":nom",$nom);
-    $response->bindParam(":messageMail",$message);
-    $response->bindParam(":taille",$taille);
-    $response->bindParam(":date",$date);
-    $response->bindParam(":lien",$lienURL);
+    $response->bindParam(":messageMail",$message, PDO::PARAM_STR);
+    $response->bindParam(":taille",$taille, PDO::PARAM_INT);
+  
     $response->execute();
-    $result = $response->lastinsertId();
+    $result = $bdd->lastInsertId();
     return $result; 
 }    
 
 // Requête pour afficher les informations du document
 function showDoc($nom,$message,$taille, $date, $lien){
     global $bdd;
-    $response = $bdd->prepare("SELECT * FROM fichier(`nom_f`,`message_f`, `taille_f`, `date_f`, `lien_f`) VALUES (:nom, :messageMail,:taille, CURRENT_TIMESTAMP, :lien)");
+    $response = $bdd->prepare("SELECT * FROM fichier(nom_f, message_f, taille_f, date_f, lien_f) VALUES (:nom, :messageMail,:taille, :dateFile, :lien)");
     $response->bindParam(":nom",$nom);
-    $response->bindParam(":messageMail",$message);
-    $response->bindParam(":taille",$taille);
-    $response->bindParam(":date",$date);
-    $response->bindParam(":lien",$lienURL);
+    $response->bindParam(":messageMail",$message, PDO::PARAM_STR);
+    $response->bindParam(":taille",$taille, PDO::PARAM_INT);
+    $response->bindParam(":dateFile",$date, PDO::PARAM_INT);
+    $response->bindParam(":lien",$lienURL, PDO::PARAM_STR);
     $response->execute();
     $result=$response->fetchAll(PDO::FETCH_ASSOC);
 
@@ -37,10 +36,10 @@ function showDoc($nom,$message,$taille, $date, $lien){
 
 function addDestMail($mailDest){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO destinataire(`mail_d') VALUES (:mailDest)");
-    $response->bindParam(":mailDest",$mailDest);
+    $response = $bdd->prepare("INSERT INTO destinataire(mail_d) VALUES(:mailDest)");
+    $response->bindParam(":mailDest",$mailDest, PDO::PARAM_STR);
     $response->execute();
-    $result = $response->lastinsertId();
+    $result = $bdd->lastInsertId();
 
     return $result;
 }
@@ -50,18 +49,13 @@ function addDestMail($mailDest){
 
 function addExpMail($mailExp){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO expediteur(`mail_ex') VALUES (:mailExp)");
-    $response->bindParam(":mailExp",$mailExp);
+    $response = $bdd->prepare("INSERT INTO expediteur(mail_ex) VALUES(:mailExp)");
+    $response->bindParam(":mailExp",$mailExp, PDO::PARAM_STR);
     $response->execute();
-    $result = $response->lastinsertId();
-
+    $result = $bdd->lastInsertId();
+    
     return $result; 
 }
-
-
-// 3- Requête pour ["à définir"]
-
-
 // 4- Requête pour supprimer les données mails
 //L'idéal serait de pouvoir regrouper les 2 en cascade pour tout supprimer d'un coup
 
@@ -89,17 +83,15 @@ function removeExpMail(){
 
 function tableLink($id_d, $id_f, $id_ex){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest('id_f', 'id_ex', 'id_d') VALUE (:id_f,   :id_ex,  :id_d");
+    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest(id_f, id_ex, id_d) VALUES (:id_d, :id_f, :id_ex)");
+    $response->bindParam(":id_d", $id_d, PDO::PARAM_INT);
     $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
-    $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
-    $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
+    $response->bindParam(":id_ex", $id_ex, PDO::PARAM_INT);
 
     $response->execute();
-    // $result = $response->lastinsertId();
-
-    
-    // return $result;
 }
 
 
-//
+
+// liaison des tables expediteur, destinataire, et fichier
+

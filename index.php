@@ -34,6 +34,10 @@ case '/weTransferBis/reception/':
 require_once('controllers/reception.php');
 break;
 
+case '/weTransferBis/download':
+case '/weTransferBis/download/':
+require_once('controllers/download.php');
+break;
 
 default:
 require_once('controllers/404-error.php');

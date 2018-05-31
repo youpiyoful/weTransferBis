@@ -36,4 +36,11 @@ textarea {
   right: 0;
   margin: auto; }
 
+.btn_radius {
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+  color: white;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */

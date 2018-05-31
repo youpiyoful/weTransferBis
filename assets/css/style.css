@@ -34,6 +34,15 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto; }
+  
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+margin:auto;
+}
+
+h3 {
+  font-family: "roboto";
+  color: #3b3a40; }
 
 /*# sourceMappingURL=style.css.map */

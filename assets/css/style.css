@@ -1,3 +1,34 @@
+@font-face {
+  font-family: "kiona";
+  src: url("../fonts/Kiona-Regular.ttf");
+  /*police*/ }
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Thin.ttf");
+  /*police*/ }
+@font-face {
+  font-family: "jenna sue";
+  src: url("../fonts/JennaSue.ttf");
+  /*police*/ }
+.bodyBg {
+  background-color: rgba(185, 149, 105, 0.849); }
 
+.block {
+  border: 1px solid red;
+  text-align: center;
+  vertical-align: middle; }
+
+.circle {
+  background: white;
+  border-radius: 100%;
+  color: white;
+  height: 100%;
+  font-weight: bold;
+  width: 100%;
+  display: table;
+  margin: 20px auto; }
+
+textarea {
+  resize: none; }
 
 /*# sourceMappingURL=style.css.map */

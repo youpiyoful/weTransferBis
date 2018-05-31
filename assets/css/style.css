@@ -28,4 +28,7 @@
   display: table;
   margin: 20px auto; }
 
+textarea {
+  resize: none; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,26 @@
-body{
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-}
+//Partie Chaymaa
+@font-face {
+    font-family: "kiona";
+    src: url('../fonts/Kiona-Regular.ttf');
+    /*police*/
+  }
+  @font-face {
+    font-family: "roboto";
+    src: url('../fonts/Roboto-Thin.ttf');
+    /*police*/
+  }
+  @font-face {
+    font-family: "jenna sue";
+    src: url('../fonts/JennaSue.ttf');
+    /*police*/
+  }
 
+//Fin partie Chaymaa
+
+
+
+
+//Partie Seb
 .bodyBg{
     background-color: rgba(185, 149, 105, 0.849);
 }
@@ -15,11 +34,13 @@ body{
 
 .circle {
     background: white;
-    border-radius: 200px;
+    border-radius: 100%;
     color: white;
-    height: 200px;
+    height: 100%;
     font-weight: bold;
-    width: 200px;
+    width: 100%;
     display: table;
     margin: 20px auto;
 }
+
+//Fin partie Seb

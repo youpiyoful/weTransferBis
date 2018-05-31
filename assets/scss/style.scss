@@ -18,19 +18,16 @@
 }
 
 //Fin partie Chaymaa
-
 //Partie Seb
 .bodyBg {
-    background-color: #c0B6aa;
+    background-color: #c0b6aa;
 }
 
 // .logo_p{
-    
-    // justify-items: flex-end;
-    // justify-content: flex-end;
-    // justify-content: center;
+// justify-items: flex-end;
+// justify-content: flex-end;
+// justify-content: center;
 // }
-
 .block {
     border: 1px solid red;
     text-align: center;
@@ -40,8 +37,7 @@
 .circle {
     background: white;
     border-radius: 100%;
-    color: white;
-    // height: 100%;
+    color: white; // height: 100%;
     // font-weight: bold;
     // width: 100%;
     // display: table;
@@ -52,7 +48,8 @@ textarea {
     resize: none;
 }
 
-.testeuh { //a placer dans un média kiri
+.circle_center {
+    //a placer dans un média kiri je crois
     width: 250px;
     height: 250px;
     position: absolute;

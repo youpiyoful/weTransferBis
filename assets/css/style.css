@@ -26,9 +26,9 @@
 textarea {
   resize: none; }
 
-.testeuh {
-  width: 390px;
-  height: 390px;
+.circle_center {
+  width: 270px;
+  height: 270px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -44,5 +44,12 @@ margin:auto;
 h3 {
   font-family: "roboto";
   color: #3b3a40; }
+
+.btn_radius {
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+  color: white;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

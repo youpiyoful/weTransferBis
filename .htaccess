@@ -15,4 +15,3 @@ RewriteRule ^reception index.php [L,QSA]
 
 RewriteRule ^download index.php [L,QSA]
 
-

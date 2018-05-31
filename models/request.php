@@ -92,4 +92,6 @@ function tableLink($id_d, $id_f, $id_ex){
 }
 
 
+
 // liaison des tables expediteur, destinataire, et fichier
+

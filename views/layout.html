@@ -4,12 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- 	<base href="http://localhost/weTransferBis/index.php"> -->
+	<!-- <base href="http://localhost/acs-transfert/index.php"> -->
 	<!-- <base href="http://sebastianz.promo-17.codeur.online/acs-transfert/index.php"> pour le online -->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	    crossorigin="anonymous">
-	<link rel="shortcut icon" href="/assets/medias/images/icon/logo-eposte.jpg">
+	<link rel="shortcut icon" href="assets/medias/images/icon/logo-eposte.jpg">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 	    crossorigin="anonymous">
@@ -17,15 +17,32 @@
 	<title>{% block title %}{% endblock %}</title>
 </head>
 
-<body>
-	<nav class="navbar navbar-default" role="navigation"></nav>		<ul>
+<body class="bodyBg">
+
+	<nav class="navbar navbar-light bg-white">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="parachute" src="e-poste-projet/medias/logo-parachute-eposte.jpg" height="50%" width="50%">
+					<img class="logo_p" alt="e-poste" src="e-poste-projet/medias/titre-logo-eposte.jpg" height="50%" width="50%">
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!-- <nav class="navbar navbar-black" role="navigation"></nav>		<ul>
 			<li>
 				<a href="" title=""></a>
 			</li>
 		</ul>
-	</nav>
+	</nav> -->
 
-	{% block section %}{% endblock %}
+				<div class="circle testeuh">
+
+					{% block section %}{% endblock %}
+
+				</div>
+
+
 </body>
 
 </html>

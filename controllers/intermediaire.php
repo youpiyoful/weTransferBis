@@ -5,11 +5,13 @@ require_once('models/request.php');
 
 $mailExp = $_POST['expediteur'];
 $mailDest = $_POST['destinataire'];
+
 $fileName = $_FILES['upFile']['name'];
 $fileMessage = $_POST['message'];
 $fileSize = $_FILES['upFile']['size'];
 $fileType = $_FILES['upFile']["type"];
 // $fileLink
+
 
 
 

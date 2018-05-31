@@ -72,4 +72,3 @@ function removeExpMail(){
     $response->execute();
     return "true"; 
 }
-

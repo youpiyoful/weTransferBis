@@ -1,4 +1,7 @@
 utils/
 vendor/
 composer.json
-composer.lock
+composer.
+assets/css
+assets/scss
+.sass-cache/

@@ -1,6 +1,5 @@
 utils/
 vendor/
-composer.json
-composer.lock
 assets/css
 .sass-cache/
+

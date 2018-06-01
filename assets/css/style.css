@@ -30,6 +30,16 @@
   border-radius: 100%;
   color: white; }
 
+.circle_center {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
 .customBrowser {
   display: flex;
   justify-content: center; }
@@ -54,18 +64,33 @@ textarea {
 .messageHolderSize {
   width: 98%; }
 
-.circle_center {
-  width: 3500px;
-  height: 350px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; }
+.btn_radius {
+  display: flex;
+  margin: auto;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase; }
 
 .iconColor {
-  color: #ebb940;
-  font-size: 30px; }
+  color: #ebb940; }
+
+@media (min-width: 992px) {
+  .circle_center {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+  .parachute {
+    width: 20%;
+    height: 20%; }
+
+  .iconColor {
+    color: #ebb940;
+    font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,13 @@
   font-family: "jenna sue";
   src: url("../fonts/JennaSue.ttf");
   /*police*/ }
+.btn_radius {
+  display: flex;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px; }
+
 .bodyBg {
   background-color: #c0b6aa; }
 
@@ -23,6 +30,7 @@
   border-radius: 100%;
   color: white; }
 
+<<<<<<< HEAD
 .customBrowser {
   overflow: hidden; }
 
@@ -33,6 +41,8 @@ textarea {
 .messageHolderSize {
   width: 98%; }
 
+=======
+>>>>>>> a6b7b7f648979c056a97ff8877dfbdc95ac948bf
 .circle_center {
   width: 270px;
   height: 270px;
@@ -42,6 +52,30 @@ textarea {
   left: 0;
   right: 0;
   margin: auto; }
+
+.customBrowser {
+  display: flex;
+  justify-content: center; }
+
+.label_font {
+  color: #000000;
+  font-family: 'roboto';
+  text-transform: uppercase; }
+
+.label_file {
+  cursor: pointer; }
+
+.label_file:hover {
+  color: #25a5c4; }
+
+.input-file {
+  display: none; }
+
+textarea {
+  resize: none; }
+
+.messageHolderSize {
+  width: 98%; }
 
 .btn_radius {
   display: flex;
@@ -53,6 +87,21 @@ textarea {
 
 .iconColor {
   color: #ebb940; }
+
+@media (min-width: 992px) {
+  .circle_center {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+  .parachute {
+    width: 20%;
+    height: 20%; } }
 
 /*# sourceMappingURL=style.css.map */
 class="button"

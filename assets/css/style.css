@@ -10,6 +10,13 @@
   font-family: "jenna sue";
   src: url("../fonts/JennaSue.ttf");
   /*police*/ }
+.btn_radius {
+  display: flex;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px; }
+
 .bodyBg {
   background-color: #c0b6aa; }
 
@@ -56,12 +63,6 @@ textarea {
   left: 0;
   right: 0;
   margin: auto; }
-
-.btn_radius {
-  display: flex;
-  margin: auto;
-  color: white;
-  text-transform: uppercase; }
 
 .iconColor {
   color: #ebb940; }

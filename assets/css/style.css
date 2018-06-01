@@ -17,6 +17,20 @@
   text-transform: uppercase;
   border-radius: 50px; }
 
+button, input, optgroup, select, textarea {
+  margin: 10px;
+  font-family: "roboto";
+  font-size: inherit;
+  line-height: inherit;
+  color: #3b3a40;
+  display: block;
+  justify-content: center; }
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  margin-left: 70px; }
+
 .bodyBg {
   background-color: #c0b6aa; }
 
@@ -51,7 +65,8 @@
 .label_font {
   color: #000000;
   font-family: 'roboto';
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 40px; }
 
 .label_file {
   cursor: pointer; }
@@ -66,7 +81,8 @@ textarea {
   resize: none; }
 
 .messageHolderSize {
-  width: 98%; }
+  width: 78%;
+  margin-left: 55px; }
 
 .btn_radius {
   display: flex;

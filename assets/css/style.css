@@ -77,7 +77,7 @@ textarea {
 .btn_radius {
   display: flex;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 50px;
   color: white;
   text-transform: uppercase; }
 
@@ -91,6 +91,10 @@ textarea {
 
   .parachute {
     width: 20%;
-    height: 20%; } }
+    height: 20%; }
+
+  .iconColor {
+    color: #ebb940;
+    font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

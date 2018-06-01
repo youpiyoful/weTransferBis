@@ -20,6 +20,16 @@
 .bodyBg {
   background-color: #c0b6aa; }
 
+.parachute {
+  width: 30%;
+  height: 30%; }
+
+.logo_p {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 50%; }
+
 .block {
   border: 1px solid red;
   text-align: center;
@@ -76,14 +86,8 @@ textarea {
 
 @media (min-width: 992px) {
   .circle_center {
-    width: 370px;
-    height: 370px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; }
+    width: 550px;
+    height: 550px; }
 
   .parachute {
     width: 20%;

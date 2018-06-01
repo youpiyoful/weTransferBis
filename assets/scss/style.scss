@@ -33,16 +33,26 @@
 //Fin partie 
 
 
+
+
+
 //Partie Seb
 .bodyBg {
     background-color: #c0b6aa;
 }
 
-// .logo_p{
-// justify-items: flex-end;
-// justify-content: flex-end;
-// justify-content: center;
-// }
+.parachute{
+    width: 30%;
+    height: 30%;
+}
+
+.logo_p{
+    display: flex;
+    justify-content: flex-end;
+    // padding-left: 30px;
+    width: 50%;
+    height: 50%;
+}
 
 .block {
     border: 1px solid red;
@@ -126,14 +136,14 @@ textarea {
 
 .circle_center {
     //a placer dans un média kiri je crois
-    width: 370px;
-    height: 370px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    width: 550px;
+    height: 550px;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // margin: auto;
 }
 
 .parachute{

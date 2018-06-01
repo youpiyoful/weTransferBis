@@ -54,6 +54,19 @@
     // margin: 20px auto;
 }
 
+.circle_center {
+    //a placer dans un média kiri je crois
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
 .customBrowser{
     // overflow: hidden;
     display: flex;
@@ -89,18 +102,6 @@ textarea {
     width: 98%;
 }
 
-.circle_center {
-    //a placer dans un média kiri je crois
-    width: 270px;
-    height: 270px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
 .btn_radius {
     display: flex;
     margin: auto;
@@ -113,5 +114,30 @@ textarea {
     // background-color: #ffff;
     color: #ebb940;
 }
+
+@media (min-width: 992px) { 
+
+.circle_center {
+    //a placer dans un média kiri je crois
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.parachute{
+    width: 20%;
+    height: 20%;
+}
+
+}
+
+// @media (min-width: 1200px) { 
+
+// }
 
 //Fin partie Seb

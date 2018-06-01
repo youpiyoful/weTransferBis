@@ -81,7 +81,8 @@ textarea {
   resize: none; }
 
 .messageHolderSize {
-  width: 98%; }
+  width: 78%;
+  margin-left: 55px; }
 
 .btn_radius {
   display: flex;

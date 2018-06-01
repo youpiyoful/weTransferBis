@@ -39,12 +39,11 @@ textarea {
 .btn_radius {
   display: flex;
   margin: auto;
-  border-radius: 50%;
   color: white;
   text-transform: uppercase; }
 
 h3 {
-  font-size: 15px;
+  font-size: 20px;
   color: #3b3a40;
   font-family: "roboto"; }
 

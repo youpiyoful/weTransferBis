@@ -1,8 +1,8 @@
-{% extends 'layout.html' %}
+{% extends 'mail.html' %}
 
 {% block header %}
 
-	<h1>{{expediteur}} vous a envoyé des fichiers</h1>
+	<h1>{{expediteur.mail}} vous a envoyé des fichiers</h1>
 
 	<button type="button">Récupérez vos fichiers</button>
 
@@ -10,7 +10,9 @@
 
 
 {% block section %}
+<main>
 
-	<h2>Expéditeur : {{expediteur}}</h2>
+	<h2>Expéditeur : {{expediteur.mail}}</h2>
 
+</main>
 {% endblock %}

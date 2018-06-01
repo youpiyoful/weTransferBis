@@ -6,22 +6,41 @@
 
 	<form id="form" method="post" action="intermediaire" enctype="multipart/form-data">
 
-			<div id="moncercle">
-				<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
-				<input class="button" type="file"><i class="fas fa-plus-circle"></i>
-			<div container>
-				<div class="row">
-					<img src="./e-poste-projet/medias/dest-arrow-icon.png" width="40px" height="40px"/><input type="text" name="destinataire" placeholder="Destinataire">
-				</div>
+
+		<div class="container">
+
+			<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
+
+			<div class="customBrowser row">
+				<p class="label_font">Parcourir
+					<label for="file" class="label_file"><i class="fas fa-plus-circle iconColor"></i></label>
+				</p>
+				<input id="file" class="button input-file" name="upFile" type="file">
+				
 			</div>
+
 			<div container>
+
 				<div class="row">
-					<img src="./e-poste-projet/medias/exp-arrow-icon.png" width="40px" height="40px"/><input type="text" name="expediteur" placeholder="Expediteur">
+					<img src="./e-poste-projet/medias/dest-arrow-icon.png" width="40px" height="40px"/>
+					<input type="text" name="destinataire" placeholder="Destinataire">
 				</div>
+
 			</div>
-				<textarea name="message" placeholder="Votre message"></textarea> <!-- change to input type text ?-->
+
+			<div container>
+
+				<div class="row">
+					<img src="./e-poste-projet/medias/exp-arrow-icon.png" width="40px" height="40px"/>
+					<input type="text" name="expediteur" placeholder="Expediteur">
+				</div>
+
+			</div>
+
+				<textarea class="messageHolderSize" name="message" placeholder="Votre message"></textarea> <!-- change to input type text ?-->
 				<input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer">
-			</div>	
+
+		</div>	
 
 	</form>
 

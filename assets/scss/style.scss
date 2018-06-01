@@ -16,8 +16,40 @@
     src: url('../fonts/JennaSue.ttf');
     /*police*/
 }
+.btn_radius{
+    display: flex;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+button, input, optgroup, select, textarea{
+    margin: 10px;
+    font-family: "roboto";
+    font-size: inherit;
+    line-height: inherit;
+    color:#3b3a40;
+    display : block; 
+    justify-content: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    margin-left: 70px;
+}
+
+
+
+// h3{
+//     font-size: 20px;
+//     color: #3b3a40;
+//     font-family: "roboto";
+// }
 
 //Fin partie 
+
+
+
 
 
 //Partie Seb
@@ -25,37 +57,28 @@
     background-color: #c0b6aa;
 }
 
-// .logo_p{
-// justify-items: flex-end;
-// justify-content: flex-end;
-// justify-content: center;
-// }
-
-.block {
-    border: 1px solid red;
-    text-align: center;
-    vertical-align: middle;
+.parachute{
+    width: 30%;
+    height: 30%;
 }
 
+.logo_p{
+    // display: flex;
+    // justify-content: flex-end;
+    padding-left: 80px;
+    width: 70%;
+    height: 70%;
+}
 
 .circle {
     background: white;
     border-radius: 100%;
-    color: white; // height: 100%;
-    // font-weight: bold;
-    // width: 100%;
-    // display: table;
-    // margin: 20px auto;
-}
-
-textarea {
-    resize: none;
+    color: white; 
 }
 
 .circle_center {
-    //a placer dans un média kiri je crois
-    width: 270px;
-    height: 270px;
+    width: 349px;
+    height: 349px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -64,16 +87,91 @@ textarea {
     margin: auto;
 }
 
+
+.customBrowser{
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+// on personnalise le label comme on veut
+.label_font {
+    color: #000000;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.label_file {
+    cursor: pointer;
+}
+.label_file:hover {
+    color: #25a5c4;
+}
+
+// et on masque le input
+.input-file {
+    display: none;
+}
+
+textarea {
+    resize: none;
+
+}
+
+.messageHolderSize{
+    width: 78%;
+    margin-left : 55px;
+}
+
 .btn_radius {
     display: flex;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 50px;
     color: white;
     text-transform: uppercase;
 }
-h3{
-    font-size: 20px;
-    color: #3b3a40;
-    font-family: "roboto";
+
+.iconColor{
+    // background-color: #ffff;
+    color: #ebb940;
 }
+
+@media (min-width: 992px) { 
+
+    .circle_center {
+        //a placer dans un média kiri je crois
+        width: 550px;
+        height: 550px;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // margin: auto;
+    }
+
+    .parachute{
+        width: 20%;
+        height: 20%;
+    }
+
+
+    .iconColor{
+        // background-color: #ffff;
+        color: #ebb940;
+        font-size :30px;
+    }
+
+}
+
+// @media (min-width: 1200px) 
+
+// 
+//
+
+
 //Fin partie Seb

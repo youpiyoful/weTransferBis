@@ -10,25 +10,47 @@
   font-family: "jenna sue";
   src: url("../fonts/JennaSue.ttf");
   /*police*/ }
+.btn_radius {
+  display: flex;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px; }
+
+button, input, optgroup, select, textarea {
+  margin: 10px;
+  font-family: "roboto";
+  font-size: inherit;
+  line-height: inherit;
+  color: #3b3a40;
+  display: block;
+  justify-content: center; }
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  margin-left: 70px; }
+
 .bodyBg {
   background-color: #c0b6aa; }
 
-.block {
-  border: 1px solid red;
-  text-align: center;
-  vertical-align: middle; }
+.parachute {
+  width: 30%;
+  height: 30%; }
+
+.logo_p {
+  padding-left: 80px;
+  width: 70%;
+  height: 70%; }
 
 .circle {
   background: white;
   border-radius: 100%;
   color: white; }
 
-textarea {
-  resize: none; }
-
 .circle_center {
-  width: 270px;
-  height: 270px;
+  width: 349px;
+  height: 349px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -36,16 +58,53 @@ textarea {
   right: 0;
   margin: auto; }
 
+.customBrowser {
+  display: flex;
+  justify-content: center; }
+
+.label_font {
+  color: #000000;
+  font-family: 'roboto';
+  text-transform: uppercase;
+  margin-top: 40px; }
+
+.label_file {
+  cursor: pointer; }
+
+.label_file:hover {
+  color: #25a5c4; }
+
+.input-file {
+  display: none; }
+
+textarea {
+  resize: none; }
+
+.messageHolderSize {
+  width: 78%;
+  margin-left: 55px; }
+
 .btn_radius {
   display: flex;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 50px;
   color: white;
   text-transform: uppercase; }
 
-h3 {
-  font-size: 15px;
-  color: #3b3a40;
-  font-family: "roboto"; }
+.iconColor {
+  color: #ebb940; }
+
+@media (min-width: 992px) {
+  .circle_center {
+    width: 550px;
+    height: 550px; }
+
+  .parachute {
+    width: 20%;
+    height: 20%; }
+
+  .iconColor {
+    color: #ebb940;
+    font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

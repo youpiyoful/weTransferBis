@@ -32,7 +32,8 @@ img {
   margin-left: 70px; }
 
 .bodyBg {
-  background-color: #c0b6aa; }
+  background-color: #c0b6aa;
+  margin: auto; }
 
 .parachute {
   width: 30%;

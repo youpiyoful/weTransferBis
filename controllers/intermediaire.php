@@ -35,6 +35,21 @@ $idDest = addDestMail($mailDest);
 
 tableLink($idDest, $idFile, $idExp);
 
+if (isset($_FILES['upFile'])){
+    
+    $redirection = true;
+
+    $path = $_SERVER['DOCUMENT_ROOT'].'/weTransferBis/assets/medias/files/'.$fileName;
+    move_uploaded_file($_FILES['upFile']['tmp_name'], $path);
+}
+
+$allInfos = linkAll($_GET['url']);
+
+var_dump($allInfos);
+
+// envoie du mail au destinataire
 
 
-header("Location: reception");
+
+// envoie du mail a l'expéditeur
+	

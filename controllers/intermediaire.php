@@ -33,7 +33,7 @@ $idDest = addDestMail($mailDest);
 
 //fonction pour insérer tous les id propre au mail dans la table de liaison
 
-tableLink($idDest, $idFile, $idExp);
+tableLink($idDest, $idFile, $idExp, $urlPageDl);
 
 if (isset($_FILES['upFile'])){
     

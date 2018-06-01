@@ -81,12 +81,13 @@ function removeExpMail(){
 
 //requête insérer dans table de liaison
 
-function tableLink($id_d, $id_f, $id_ex){
+function tableLink($id_d, $id_f, $id_ex, $url_page_dl){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest(id_d, id_f, id_ex) VALUES (:id_d, :id_f, :id_ex)");
+    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest(id_d, id_f, id_ex, url_page_dl) VALUES (:id_d, :id_f, :id_ex, :url_page_dl)");
     $response->bindParam(":id_d", $id_d, PDO::PARAM_INT);
     $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
     $response->bindParam(":id_ex", $id_ex, PDO::PARAM_INT);
+    $response->bindParam(":url_page_dl", $url_page_dl, PDO::PARAM_STR);
 
     $response->execute();
 }

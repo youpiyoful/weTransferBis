@@ -83,7 +83,7 @@ function removeExpMail(){
 
 function tableLink($id_d, $id_f, $id_ex){
     global $bdd;
-    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest(id_f, id_ex, id_d) VALUES (:id_d, :id_f, :id_ex)");
+    $response = $bdd->prepare("INSERT INTO liaison_fi_ex_dest(id_d, id_f, id_ex) VALUES (:id_d, :id_f, :id_ex)");
     $response->bindParam(":id_d", $id_d, PDO::PARAM_INT);
     $response->bindParam(":id_f", $id_f, PDO::PARAM_INT);
     $response->bindParam(":id_ex", $id_ex, PDO::PARAM_INT);
@@ -95,3 +95,25 @@ function tableLink($id_d, $id_f, $id_ex){
 
 // liaison des tables expediteur, destinataire, et fichier
 
+function linkAll($idMail){
+    global $bdd;
+    $response = $bdd->prepare("SELECT expediteur.mail_ex, destinataire.mail_d, fichier.nom_f, fichier.message_f, fichier.taille_f, fichier.date_f FROM (((liaison_fi_ex_dest INNER JOIN expediteur ON liaison_fi_ex_dest.id_ex = expediteur.id_ex) INNER JOIN destinataire ON liaison_fi_ex_dest.id_d = destinataire.id_d) INNER JOIN fichier ON liaison_fi_ex_dest.id_f = fichier.id_f) WHERE liaison_fi_ex_dest.id_liaison = :id_mail");
+    $response->bindParam(":id_mail", $idMail, PDO::PARAM_INT);
+
+    $response->execute();
+    $result = $response->fetchAll(PDO::FETCH_ASSOC);
+    
+    return $result;
+}
+
+//fonction de test sans l'url
+
+// function linkAll(){
+//     global $bdd;
+//     $response = $bdd->prepare("SELECT expediteur.mail_ex, destinataire.mail_d, fichier.nom_f, fichier.message_f, fichier.taille_f, fichier.date_f FROM (((liaison_fi_ex_dest INNER JOIN expediteur ON liaison_fi_ex_dest.id_ex = expediteur.id_ex) INNER JOIN destinataire ON liaison_fi_ex_dest.id_d = destinataire.id_d) INNER JOIN fichier ON liaison_fi_ex_dest.id_f = fichier.id_f) WHERE liaison_fi_ex_dest.id_liaison = 18");
+
+//     $response->execute();
+//     $result = $response->fetchAll(PDO::FETCH_ASSOC);
+
+//     return $result;
+// }

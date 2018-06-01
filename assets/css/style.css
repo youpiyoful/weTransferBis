@@ -34,10 +34,14 @@ img {
 .bodyBg {
   background-color: #c0b6aa; }
 
-.block {
-  border: 1px solid red;
-  text-align: center;
-  vertical-align: middle; }
+.parachute {
+  width: 30%;
+  height: 30%; }
+
+.logo_p {
+  padding-left: 80px;
+  width: 70%;
+  height: 70%; }
 
 .circle {
   background: white;
@@ -45,8 +49,8 @@ img {
   color: white; }
 
 .circle_center {
-  width: 390px;
-  height: 390px;
+  width: 349px;
+  height: 349px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -61,7 +65,8 @@ img {
 .label_font {
   color: #000000;
   font-family: 'roboto';
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 40px; }
 
 .label_file {
   cursor: pointer; }
@@ -90,14 +95,8 @@ textarea {
 
 @media (min-width: 992px) {
   .circle_center {
-    width: 370px;
-    height: 370px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; }
+    width: 550px;
+    height: 550px; }
 
   .parachute {
     width: 20%;

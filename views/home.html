@@ -6,9 +6,14 @@
 
 	<form id="form" method="post" action="intermediaire" enctype="multipart/form-data">
 
-			<div id="moncercle">
-				<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
-				<input class="button" type="file"><i class="fas fa-plus-circle"></i>
+
+		<div>
+
+			<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
+				<div class="customBrowser">
+					<input class="button" type="file"><i class="fas fa-plus-circle iconColor"></i>
+				</div>
+
 			<div container>
 				<div class="row">
 					<img src="./e-poste-projet/medias/dest-arrow-icon.png" width="40px" height="40px"/><input type="text" name="destinataire" placeholder="Destinataire">
@@ -21,7 +26,7 @@
 			</div>
 				<textarea name="message" placeholder="Votre message"></textarea> <!-- change to input type text ?-->
 				<input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer">
-			</div>	
+		</div>	
 
 	</form>
 

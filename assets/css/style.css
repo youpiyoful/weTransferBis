@@ -23,8 +23,17 @@
   border-radius: 100%;
   color: white; }
 
-.customBrowser {
-  overflow: hidden; }
+.label_file {
+  cursor: pointer;
+  color: #000000;
+  font-family: 'roboto';
+  text-transform: uppercase; }
+
+.label_file:hover {
+  color: #25a5c4; }
+
+.input-file {
+  display: none; }
 
 textarea {
   resize: none; }

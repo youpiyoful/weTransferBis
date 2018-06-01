@@ -54,9 +54,26 @@
     // margin: 20px auto;
 }
 
-.customBrowser{
-    overflow: hidden;
-    // color: red;
+// .customBrowser{
+//     overflow: hidden;
+//     // color: red;
+// }
+
+
+// on personnalise le label comme on veut
+.label_file {
+    cursor: pointer;
+    color: #000000;
+    font-family: 'roboto';
+    text-transform: uppercase;
+}
+.label_file:hover {
+    color: #25a5c4;
+}
+
+// et on masque le input
+.input-file {
+    display: none;
 }
 
 textarea {

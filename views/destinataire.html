@@ -1,4 +1,4 @@
-{% extends 'layout.html' %}
+{% extends 'mail.html' %}
 
 {% block header %}
 
@@ -10,8 +10,10 @@
 
 
 {% block section %}
+<main>
 
 	<h2>Expéditeur : {{expediteur.mail}}</h2>
 	<<p>Fichier : {{fichier.size}} <p>
 
+</main>
 {% endblock %}

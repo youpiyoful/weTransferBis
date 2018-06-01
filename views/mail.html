@@ -20,8 +20,16 @@
 
 <body>
 	{% block header %}{% endblock %}
-	<p>{{size}}{{name}}{{date}}</p>
-	<p>{{message}}</p>
+	<p>{{ fichier.size }}{{ fichier.name }}{{ fichier.date }}</p>
+	<p>{{ fichier.message}}</p>
 </body>
+
+
+
+<footer>
+
+	<!--On rajoute ici le logo en signature du coup ?-->
+
+</footer>
 
 </html>

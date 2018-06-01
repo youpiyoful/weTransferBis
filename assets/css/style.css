@@ -29,6 +29,9 @@
 textarea {
   resize: none; }
 
+.messageHolderSize {
+  width: 98%; }
+
 .circle_center {
   width: 270px;
   height: 270px;

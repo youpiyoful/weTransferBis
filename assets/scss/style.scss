@@ -17,6 +17,12 @@
     /*police*/
 }
 
+// h3{
+//     font-size: 20px;
+//     color: #3b3a40;
+//     font-family: "roboto";
+// }
+
 //Fin partie 
 
 
@@ -48,8 +54,39 @@
     // margin: 20px auto;
 }
 
+.customBrowser{
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+// on personnalise le label comme on veut
+.label_font {
+    color: #000000;
+    font-family: 'roboto';
+    text-transform: uppercase;
+}
+
+.label_file {
+    cursor: pointer;
+}
+.label_file:hover {
+    color: #25a5c4;
+}
+
+// et on masque le input
+.input-file {
+    display: none;
+}
+
 textarea {
     resize: none;
+}
+
+.messageHolderSize{
+    width: 98%;
 }
 
 .circle_center {
@@ -71,9 +108,10 @@ textarea {
     text-transform: uppercase;
     border-radius: 10px;
 }
-h3{
-    font-size: 20px;
-    color: #3b3a40;
-    font-family: "roboto";
+
+.iconColor{
+    // background-color: #ffff;
+    color: #ebb940;
 }
+
 //Fin partie Seb

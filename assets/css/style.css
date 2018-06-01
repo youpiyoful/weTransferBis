@@ -23,8 +23,29 @@
   border-radius: 100%;
   color: white; }
 
+.customBrowser {
+  display: flex;
+  justify-content: center; }
+
+.label_font {
+  color: #000000;
+  font-family: 'roboto';
+  text-transform: uppercase; }
+
+.label_file {
+  cursor: pointer; }
+
+.label_file:hover {
+  color: #25a5c4; }
+
+.input-file {
+  display: none; }
+
 textarea {
   resize: none; }
+
+.messageHolderSize {
+  width: 98%; }
 
 .circle_center {
   width: 270px;
@@ -42,9 +63,7 @@ textarea {
   color: white;
   text-transform: uppercase; }
 
-h3 {
-  font-size: 20px;
-  color: #3b3a40;
-  font-family: "roboto"; }
+.iconColor {
+  color: #ebb940; }
 
 /*# sourceMappingURL=style.css.map */

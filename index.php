@@ -1,23 +1,20 @@
 <?php
 
-//  $url = explode('/', $_SERVER['REQUEST_URI'], 4);
+ $url = explode('/', $_SERVER['REQUEST_URI'], 3);
 
-// // // j'ai supprimé la limite car le array_supprimait de toute façon le dernier élément même si c'était inférieur a 5
-//  if(count($url) > 3){
-//     array_pop($url);
-// }
+// // j'ai supprimé la limite car le array_supprimait de toute façon le dernier élément même si c'était inférieur a 5
+ if(count($url) > 2){
+    array_pop($url);
+}
 
-// //  var_dump($url);
-// // echo "<br>";
-// // var_dump($url);
-// // echo "<br>";
-// $path = implode('/', $url);
-
-
-$url = $_SERVER['REQUEST_URI'];
+//  var_dump($url);
+// echo "<br>";
+// var_dump($url);
+// echo "<br>";
+$path = implode('/', $url);
 
 
-switch ($url){
+switch ($path){
 case '/weTransferBis':
 case '/weTransferBis/':
 require_once('controllers/home.php');

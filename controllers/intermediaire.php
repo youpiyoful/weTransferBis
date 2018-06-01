@@ -10,10 +10,9 @@ $fileName = $_FILES['upFile']['name'];
 $fileMessage = $_POST['message'];
 $fileSize = $_FILES['upFile']['size'];
 $fileType = $_FILES['upFile']["type"];
+
+
 // $fileLink
-
-
-
 
 // var_dump($_POST);
 // echo "<br>";

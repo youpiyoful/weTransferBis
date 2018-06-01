@@ -23,9 +23,15 @@
   border-radius: 100%;
   color: white; }
 
+.customBrowser {
+  overflow: hidden; }
+
 textarea {
   resize: none;
   }
+
+.messageHolderSize {
+  width: 98%; }
 
 .circle_center {
   width: 270px;
@@ -45,10 +51,8 @@ textarea {
   text-transform: uppercase;
   }
 
-h3 {
-  font-size: 15px;
-  color: #3b3a40;
-  font-family: "roboto"; }
+.iconColor {
+  color: #ebb940; }
 
 /*# sourceMappingURL=style.css.map */
 class="button"

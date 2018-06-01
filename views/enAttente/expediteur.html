@@ -2,13 +2,13 @@
 
 {% block header %}
 
-	<h1>Fichiers envoyés à {{destinataire}}</h1>
+	<h1>Fichiers envoyés à {{destinataire.mail}}</h1>
 	<p>Merci d'utiliser E-poste. Nous vous enverrons un e-mail de confirmation dès que vos fichiers seront téléchargés.</p>
 
 {% endblock %}
 
 {% block section %}
 
-	<h2>Destinataire : {{destinataire}}</h2>
+	<h2>Destinataire : {{destinataire.mail}}</h2>
 
 {% endblock %}

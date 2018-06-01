@@ -48,34 +48,22 @@
 }
 
 .logo_p{
-    display: flex;
-    justify-content: flex-end;
-    // padding-left: 30px;
-    width: 50%;
-    height: 50%;
+    // display: flex;
+    // justify-content: flex-end;
+    padding-left: 80px;
+    width: 70%;
+    height: 70%;
 }
-
-.block {
-    border: 1px solid red;
-    text-align: center;
-    vertical-align: middle;
-}
-
 
 .circle {
     background: white;
     border-radius: 100%;
-    color: white; // height: 100%;
-    // font-weight: bold;
-    // width: 100%;
-    // display: table;
-    // margin: 20px auto;
+    color: white; 
 }
 
 .circle_center {
-    //a placer dans un média kiri je crois
-    width: 270px;
-    height: 270px;
+    width: 349px;
+    height: 349px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -135,33 +123,36 @@ textarea {
 
 @media (min-width: 992px) { 
 
-.circle_center {
-    //a placer dans un média kiri je crois
-    width: 550px;
-    height: 550px;
-    // position: absolute;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-    // margin: auto;
-}
+    .circle_center {
+        //a placer dans un média kiri je crois
+        width: 550px;
+        height: 550px;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // margin: auto;
+    }
 
-.parachute{
-    width: 20%;
-    height: 20%;
-}
+    .parachute{
+        width: 20%;
+        height: 20%;
+    }
 
 
-.iconColor{
-    // background-color: #ffff;
-    color: #ebb940;
-    font-size :30px;
-}
+    .iconColor{
+        // background-color: #ffff;
+        color: #ebb940;
+        font-size :30px;
+    }
+
 }
 
 // @media (min-width: 1200px) 
 
 // 
-// 
+//
+
+
 //Fin partie Seb

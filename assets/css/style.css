@@ -25,15 +25,9 @@
   height: 30%; }
 
 .logo_p {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  height: 50%; }
-
-.block {
-  border: 1px solid red;
-  text-align: center;
-  vertical-align: middle; }
+  padding-left: 80px;
+  width: 70%;
+  height: 70%; }
 
 .circle {
   background: white;
@@ -41,8 +35,8 @@
   color: white; }
 
 .circle_center {
-  width: 270px;
-  height: 270px;
+  width: 349px;
+  height: 349px;
   position: absolute;
   top: 0;
   bottom: 0;

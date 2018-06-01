@@ -23,11 +23,17 @@
   border-radius: 100%;
   color: white; }
 
-.label_file {
-  cursor: pointer;
+.customBrowser {
+  display: flex;
+  justify-content: center; }
+
+.label_font {
   color: #000000;
   font-family: 'roboto';
   text-transform: uppercase; }
+
+.label_file {
+  cursor: pointer; }
 
 .label_file:hover {
   color: #25a5c4; }

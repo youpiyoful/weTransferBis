@@ -54,18 +54,23 @@
     // margin: 20px auto;
 }
 
-// .customBrowser{
-//     overflow: hidden;
-//     // color: red;
-// }
+.customBrowser{
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
 
 
 // on personnalise le label comme on veut
-.label_file {
-    cursor: pointer;
+.label_font {
     color: #000000;
     font-family: 'roboto';
     text-transform: uppercase;
+}
+
+.label_file {
+    cursor: pointer;
 }
 .label_file:hover {
     color: #25a5c4;

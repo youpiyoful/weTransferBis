@@ -37,4 +37,19 @@ tableLink($idDest, $idFile, $idExp);
 
 
 
-header("Location: reception");
+// header("Location: reception");
+
+if(isset($_POST['mail-dest'])){
+    echo("coucou");
+    $to = '$mailDest'; 
+    $subject = 'test-destinataire';
+    $message = 'blablabla';
+    $header = 'MIME version 1.0\r\n';
+    $header .= 'Content-type: text/html; charset=UTF-8\r\n';
+    mail($to,$subject,$message,$header);
+
+} else if(isset($_POST['mail-exp'])){
+    mail($mailExp,'test-expediteur','blablabla');
+}
+
+var_dump($_POST);

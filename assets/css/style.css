@@ -120,9 +120,10 @@ img {
   margin: auto; }
 
 .logo_p {
-  padding-left: 80px;
-  width: 70%;
-  height: 70%; }
+  margin-top: 25px; }
+
+.exp_margin {
+  margin-left: 19px; }
 
 .circle_center {
   width: 349px;

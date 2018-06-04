@@ -1,24 +1,38 @@
-{% extends 'layout.html' %} {% block title %}{% endblock %}
-<title> Votre correspondant "{{destinataire.mail}}" a bien reçu votre mail. </title>
-
-
-{% block section %}
+{% extends 'layout.html' %} {% block title %}{% endblock %} {% block section %} {#
+<p> Votre correspondant "{{destinataire.mail}}" a bien reçu votre mail. </p> #}
 
 <main>
 
-    <div class="icon_reception"></div>
-    <!-- <img src="/assets/medias/images/icon/png/file.png" class="img--pos" width="70px" height="70px"/> -->
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="container">
+                <div class="cercle"></div>
 
-    <p class="reception_p">
-        Votre fichier a bien été transmis.
-    </p>
+                <form id="form" class="formulaire" enctype="multipart/form-data">
+                    <div class="blocForm">
+                        <p class="text-center">
+                            <img src="assets/medias/images/icon/png/file.png" class="mx-auto icon_reception img--pos" width="220px" height="220px" />
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <p class="text-center reception_p">
+                            Votre fichier a bien été transmis.
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <p class="text-center reception_link_p">
+                            Lien a copier/coller :
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <div class="colored_rectangle mx-auto">
+                            {{fichier.lien}}
+                        </div>
+                    </div>
+                </form>
 
-    <p class="reception_link_p">
-        Lien a copier/coller :
-    </p>
-
-    <div class="colored_rectangle">
-        {{fichier.lien}}
+            </div>
+        </div>
     </div>
 
 </main>

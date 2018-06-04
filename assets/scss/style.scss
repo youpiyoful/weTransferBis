@@ -45,7 +45,6 @@
 }
 
 
-
 //Fin partie Chayma
 
 
@@ -152,14 +151,20 @@
 }
  
 // .parachute {
-//     width: 30%;
-//     height: 30%;
+//     width: 10%;
+//     height: 10%;
 // }
 
 .logo_p{
-    padding-left: 80px;
-    width: 70%;
-    height: 70%; }
+    margin-top: 25px;
+    // width: 30%;
+    // height: 50%; 
+}
+
+.exp_margin{
+    // width: 48%;
+    margin-left: 19px;
+}
 
 .circle_center {
     width: 349px;
@@ -299,7 +304,6 @@ textarea {
         height:200px;
         margin-left : calc(50% - 20px);
         margin-top : calc(50% - 30px);
-      
       }
       
       .blocForm{

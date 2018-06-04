@@ -236,7 +236,15 @@ textarea {
 }
 
 
-/*--------- Reception page --------*/
+/*--------- Secton reception page --------*/
+.reception_p{
+    font-family: 'Kio'
+}
+
+.reception_link_p
+{
+	font-family: 'Conv_Kiona-Regular';
+}
 
 .icon_reception{
     background-image: url("assets/medias/images/icon/png/file.png");
@@ -246,6 +254,7 @@ textarea {
     color: #c0b6aa;
     color: #ffff;
 }
+/*----------- Fin de section ---------*/
 
 @media (min-width: 992px) { 
 

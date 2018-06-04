@@ -252,19 +252,22 @@ textarea {
 
 
 @media (max-width: 575.98px) { 
-    
-    .logo{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        position: relative;
-      }
-      
-      .logo img{
-        position: absolute;
-        top:0;
-        left:0;
-        width: 139px;
+    .e-poste--size{
+        width: 120px;
         height: auto;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+    
+      .logo img{
+        
+        width: 80px;
+        height: auto;
+        margin-top: 8px;
+        margin-left: 5px;
+      }
+      .espace{
+          height: 75px;
       }
       
       .content{
@@ -275,36 +278,28 @@ textarea {
       }
       
       .container-form{
-        width: 350px;
-        height: 350px;
-        overflow: hidden;
-        position: relative;
+        width: 280px;
+        height: 280px;
       }
       
       .cercle{
-        position:relative;
-        border-radius: 50%;
-        background-color: #fff;
-        width:300px;
-        height: 300px;
-        top: 0;
-        left:0;
+        width: 280px;
+        height: 280px;
       }
       
       .formulaire{
         position:absolute;
-        top:0;
-        left:0;
-        width : 250px;
-        height:200px;
-        margin-left : calc(50% - 20px);
-        margin-top : calc(50% - 30px);
-      
+        top:2px;
+        left:2px;
+        width : 50px;
+        height:50px;
+        margin-left : 5px;
+        margin-top : 5px;;
       }
       
       .blocForm{
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 2px;
+        padding-bottom: 2px;
       }
       
       .btn-radius{
@@ -331,14 +326,14 @@ textarea {
       
       .labelmessage{
         display: block;
-        margin-left:72px;
+        margin-left:10px;
       }
       
       .txtamessage{
         background-color:  #c2b6aa;
         border:none;
         color:#fff;
-        margin-left:72px;
+        margin-left:10px;
         width:68%;
       }
     

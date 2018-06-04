@@ -60,8 +60,13 @@ if (isset($_FILES['upFile'])){
 
 $allInfos = linkAll($urlPageDl);
 
-$messageDest->render('destinataire.html',  array('allInfos' => $allInfos));
+echo "<br><br><br>";
 
+// var_dump($allInfos);
+
+// $messageDest = 
+
+echo $twig->render('destinataire.html',  array('allInfos' => $allInfos));
 
 
 // var_dump($_POST);

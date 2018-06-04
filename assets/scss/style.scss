@@ -238,17 +238,19 @@ textarea {
 
 /*--------- Section reception page --------*/
 .reception_p{
-    font-family: 'Conv_Kiona-Regular'
+  font-size: 30px;
+    font-family: 'Conv_Kiona-Regular';
 }
 
 .reception_link_p
 {
-	font-family: 'Conv_Kiona-Regular';
+  font-family: 'Kiona';
+  padding-left : 50px;
 }
 
-// .icon_reception{
-
-// }
+.icon_reception{
+  // margin-top: 50px;
+}
 
 .colored_rectangle{
     background-color: #c0b6aa;
@@ -303,6 +305,7 @@ textarea {
       }
       
       .cercle{
+        padding: 500px;
         width: 280px;
         height: 280px;
       }

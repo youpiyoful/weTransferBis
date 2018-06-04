@@ -8,7 +8,9 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 
 var_dump($_GET['url_file']);
 
-$allInfosDl = linkAll($_GET['url_file']);
+$get_url = htmlEntities($_GET['url_files']);
+
+$allInfosDl = linkAll($get_url);
 
 var_dump($allInfosDl);
 

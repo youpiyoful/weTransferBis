@@ -11,7 +11,6 @@ if(count($url) > 4){
 // echo "<br>";
 // var_dump($url);
 // echo "<br>";
-
 $path = implode('/', $url);
 var_dump($path);
 

@@ -1,8 +1,4 @@
-{% extends 'layout.html' %}
-
-{% block title %}{% endblock %}
-
-{% block section %}
+{% extends 'layout.html' %} {% block title %}{% endblock %} {% block section %}
 
 <div class="row">
 	<div class="col-12 col-lg-6">
@@ -63,23 +59,16 @@
 							</div>
 				
 								<textarea class="messageHolderSize" name="message" placeholder="Votre message"></textarea> <!-- change to input type text ?-->
-								<!-- <input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer"> -->
-				
-						<!-- </div>	 -->
-				
-					</form>
-			</div>
-			
+				<!-- <input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer"> -->
+
+				<!-- </div>	 -->
+
+			</form>
+		</div>
+
 	</div>
 </div>
 
-<script>
-		document.querySelector('#btnaddfile').addEventListener('click', function(){
-			document.querySelector('#inpfile').click()
-		});
-
-	
-</script>
-
+<script src="assets/js/script.js"></script>
 
 {% endblock %}

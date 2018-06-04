@@ -17,6 +17,27 @@
   src: local("☺"), url("fonts/JennaSue.woff") format("woff"), url("fonts/JennaSue.ttf") format("truetype"), url("fonts/JennaSue.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+.btn_radius {
+  display: flex;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px; }
+
+button, input, optgroup, select, textarea {
+  margin: 10px;
+  font-family: 'Conv_Roboto-Thin';
+  font-size: inherit;
+  line-height: inherit;
+  color: #3b3a40;
+  display: block;
+  justify-content: center; }
+
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+/********* Manu css ***********/
 .logo {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -93,38 +114,72 @@
   width: 68%; }
 
 /********* fin manu css ***********/
-.btn_radius {
-  display: flex;
-  margin: auto;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 50px; }
+/********* Seb css ***********/
+.bodyBg {
+  background-color: #c0b6aa;
+  margin: auto; }
 
-button, input, optgroup, select, textarea {
-  margin: 10px;
-  font-family: "roboto";
-  font-size: inherit;
-  line-height: inherit;
-  color: #3b3a40;
-  display: block;
+.logo_p {
+  padding-left: 80px;
+  width: 70%;
+  height: 70%; }
+
+.circle_center {
+  width: 349px;
+  height: 349px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.customBrowser {
+  display: flex;
   justify-content: center; }
 
-img {
-  vertical-align: middle;
-  border-style: none; }
+.label_font {
+  color: #000000;
+  font-family: 'Conv_Roboto-Thin';
+  text-transform: uppercase;
+  margin-top: 40px; }
 
-/*.bodyBg {
-    background-color: #c0b6aa;
-    margin: auto; }
-  
-  .parachute {
-    width: 30%;
-    height: 30%; }
-  
-  .logo_p {
-    padding-left: 80px;
-    width: 70%;
-    height: 70%; }*/
+.label_file {
+  cursor: pointer; }
+
+.label_file:hover {
+  color: #25a5c4; }
+
+.input-file {
+  display: none; }
+
+textarea {
+  resize: none; }
+
+.messageHolderSize {
+  width: 78%;
+  margin-left: 55px; }
+
+.iconColor {
+  color: #ebb940; }
+
+/*--------- Section reception page --------*/
+.reception_p {
+  font-family: "Conv_Kiona-Regular"; }
+
+.reception_link_p {
+  font-family: 'Conv_Kiona-Regular'; }
+
+.icon_reception {
+  background-image: url("assets/medias/images/icon/png/file.png"); }
+
+.colored_rectangle {
+  color: #c0b6aa;
+  color: #ffff; }
+
+/*----------- Fin de section ---------*/
+/********* Fin Seb css ***********/
+/********* media quieries ***********/
 @media (max-width: 575.98px) {
   .logo {
     padding-top: 50px;
@@ -199,27 +254,15 @@ img {
     border: none;
     color: #fff;
     margin-left: 72px;
-    width: 68%; }
+    width: 68%; } }
+@media (min-width: 992px) {
+  .circle_center {
+    width: 550px;
+    height: 550px; }
 
-  /********* fin manu css ***********/
-  .btn_radius {
-    display: flex;
-    margin: auto;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 50px; }
-
-  button, input, optgroup, select, textarea {
-    margin: 10px;
-    font-family: "roboto";
-    font-size: inherit;
-    line-height: inherit;
-    color: #3b3a40;
-    display: block;
-    justify-content: center; }
-
-  img {
-    vertical-align: middle;
-    border-style: none; } }
+  .iconColor {
+    color: #ebb940;
+    font-size: 30px; } }
+/********* fin media queries ***********/
 
 /*# sourceMappingURL=style.css.map */

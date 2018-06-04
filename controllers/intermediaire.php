@@ -62,30 +62,39 @@ $allInfos = linkAll($urlPageDl);
 
 echo "<br><br><br>";
 
-// var_dump($allInfos);
-
-// $messageDest = 
-
-echo $twig->render('destinataire.html',  array('allInfos' => $allInfos));
+var_dump($allInfos);
 
 
-// var_dump($_POST);
-// $allInfos = linkAll($_GET['url']);
+// envoie du mail au destinataire
 
-// var_dump($allInfos);
+if(isset($_POST)){
+    $to = $mailDest; 
+    $subject = 'un mail de e-post';
+    $message = $twig->render('destinataire.html', array('allInfos' => $allInfos));;
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-// // envoie du mail au destinataire
+    // More headers
+    $headers .= 'From: <yf@yoan-fornari.fr>' . "\r\n";
+    $headers .= 'Cc: myboss@example.com' . "\r\n";
+    
+    mail($to,$subject,$message,$headers);
 
-// if(isset($mailExp){
-//     $to = '$mailDest'; 
-//     $subject = 'test-destinataire';
-//     $message = 'blablabla';
-//     $header = 'MIME version 1.0\r\n';
-//     $header .= 'Content-type: text/html; charset=UTF-8\r\n';
-//     mail($to,$subject,$message,$header);
-// // envoie du mail a l'expéditeur
-// } else if(isset($_POST['mail-exp'])){
-//     mail($mailExp,'test-expediteur','blablabla');
-// }
+// envoie du mail a l'expéditeur
+
+	$to = $mailExp; 
+	$subject = 'un mail de e-post';
+	$message = $twig->render('expediteur.html', array('allInfos' => $allInfos));
+	// Always set content-type when sending HTML email
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+	// More headers
+	$headers .= 'From: <yf@yoan-fornari.fr>' . "\r\n";
+	$headers .= 'Cc: myboss@example.com' . "\r\n";
 	
-// header("Location: reception");
+	mail($to,$subject,$message,$headers);
+}
+	
+header("Location: reception");

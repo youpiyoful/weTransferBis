@@ -1,10 +1,12 @@
-{% extends 'layout.html' %}
-{% block title %}{% endblock %}
-
-
-{% block section %}
+{% extends 'layout.html' %} {% block title %}{% endblock %} {% block section %}
 
 <main>
+
+    <!-- 1ère METHODE : avec l'attribut HTML download -->
+    <!-- path_to_file = url du fichier à télécharger -->
+    <!-- file_name = nom sous lequel le fichier sera enregistré -->
+
+    <a href="path_to_file" download="file-name">Télécharger votre fichier</a>
 
 
 

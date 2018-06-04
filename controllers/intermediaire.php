@@ -2,7 +2,11 @@
 
 require_once('models/request.php');
 require_once('utils/param.php');
+require_once 'vendor/autoload.php';
 
+
+$loader = new Twig_Loader_Filesystem('views');
+$twig = new Twig_Environment($loader, array('cache' => false));
 
 $mailExp = $_POST['expediteur'];
 $mailDest = $_POST['destinataire'];
@@ -54,8 +58,15 @@ if (isset($_FILES['upFile'])){
     move_uploaded_file($_FILES['upFile']['tmp_name'], $path);
 }
 
+$allInfos = linkAll($urlPageDl);
 
+echo "<br><br><br>";
 
+// var_dump($allInfos);
+
+// $messageDest = 
+
+echo $twig->render('destinataire.html',  array('allInfos' => $allInfos));
 
 
 // var_dump($_POST);

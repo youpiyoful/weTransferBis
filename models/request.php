@@ -112,6 +112,8 @@ function linkAll($urlPageDl){
     return $result;
 }
 
+
+
 //fonction de test sans l'url
 
 // function linkAll(){

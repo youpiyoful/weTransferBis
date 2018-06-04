@@ -120,9 +120,10 @@ img {
   margin: auto; }
 
 .logo_p {
-  padding-left: 80px;
-  width: 70%;
-  height: 70%; }
+  margin-top: 25px; }
+
+.exp_margin {
+  margin-left: 19px; }
 
 .circle_center {
   width: 349px;
@@ -196,6 +197,11 @@ textarea {
   .espace {
     height: 75px; }
 
+  p.text-center {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Conv_Kiona-Regular'; }
+
   .content {
     background-color: #c2b6aa;
     padding-top: 80px;
@@ -212,16 +218,12 @@ textarea {
 
   .formulaire {
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 50px;
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 5px; }
-
-  .blocForm {
-    padding-top: 2px;
-    padding-bottom: 2px; }
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 800px;
+    margin-left: calc(50% - 20px);
+    margin-top: calc(50% - 30px); }
 
   .btn-radius {
     border-radius: 50%;
@@ -238,7 +240,7 @@ textarea {
     color: #fff; }
 
   .img--pos {
-    position: relative;
+    position: absolute;
     top: -10px; }
 
   .labelmessage {

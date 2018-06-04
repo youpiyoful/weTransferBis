@@ -1,85 +1,42 @@
 {% extends 'layout.html' %}
 
-{% block title %}{% endblock %}
-
 {% block section %}
 
 <div class="row">
-	<div class="col-lg-6">
-			<div class="container-form col-xs-6">
-					<div class="cercle"></div>
-					<form id="form" class="formulaire" method="post" action="intermediaire" enctype="multipart/form-data">
-						<div class="blocForm col-xs-6">
-								<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
-								<input id="inpfile" class="invisible" name="upFile" type="file">
-								<p class="text-center">PARCOURIR <button id="btnaddfile" type="button" class="btn btn-primary btn-radius">+</button></p>
-						</div>
-						<div class="blocForm col-xs-6">
-								<img src="./e-poste-projet/medias/dest-arrow-icon.png" class="img--pos" width="40px" height="40px"/>
-								<label for="destinataire" >Destinataire</label>
-								<input type="text" class="inptext" id="destinataire" name="destinataire" value="" >
-						</div>
-						<div class="blocForm col-xs-6">
-								<img src="./e-poste-projet/medias/exp-arrow-icon.png" class="img--pos" width="40px" height="40px"/>
-								<label for="expediteur" >Expediteur</label>
-								<input type="text" class="inptext exp_margin" id="expediteur" name="expediteur" value="" >
-						</div>
-						<div class="blocForm col-xs-6">
-							<label class="labelmessage" for="message" >Message</label>
-							<textarea class="txtamessage" name="message" id="message" ></textarea>
-						</div>
-						<div class="blocForm col-xs-6">
-								<input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer">
-						</div>
-		
-						<!-- <div class="container">
-				
-							<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
-				
-							<div class="customBrowser row">
-								<p class="label_font">Parcourir
-									<label for="file" class="label_file"><i class="fas fa-plus-circle iconColor"></i></label>
-								</p>
-								<input id="file" class="button input-file" name="upFile" type="file">
-								
-							</div>
-				
-							<div container>
-				
-								<div class="row">
-									<img src="./e-poste-projet/medias/dest-arrow-icon.png" width="40px" height="40px"/>
-									<input type="text" name="destinataire" placeholder="Destinataire">
-								</div>
-				
-							</div>
-				
-							<div container>
-				
-								<div class="row">
-									<img src="./e-poste-projet/medias/exp-arrow-icon.png" width="40px" height="40px"/>
-									<input type="text" name="expediteur" placeholder="Expediteur">
-								</div>
-				
-							</div>
-				
-								<textarea class="messageHolderSize" name="message" placeholder="Votre message"></textarea> <!-- change to input type text ?-->
-								<!-- <input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer"> -->
-				
-						<!-- </div>	 -->
-				
-					</form>
-			</div>
-			
+	<div class="col-12 col-lg-6">
+		<div class="container-form">
+			<div class="cercle"></div>
+
+			<form id="form" class="formulaire" method="post" action="intermediaire" enctype="multipart/form-data">
+				<div class="blocForm">
+					<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
+					<input id="inpfile" class="invisible" name="upFile" type="file">
+					<p class="text-center home_p_size">PARCOURIR
+						<button id="btnaddfile" type="button" class="btn btn-primary btn-radius">+</button>
+					</p>
+				</div>
+				<div class="blocForm">
+					<img src="./e-poste-projet/medias/dest-arrow-icon.png" class="img--pos" width="40px" height="40px" />
+					<label class="label_transform" for="destinataire">Destinataire</label>
+					<input type="text" class="inptext " id="destinataire" name="destinataire" value="">
+				</div>
+				<div class="blocForm">
+					<img src="./e-poste-projet/medias/exp-arrow-icon.png" class="img--pos" width="40px" height="40px" />
+					<label class="label_transform" for="expediteur">Expediteur</label>
+					<input type="text" class="inptext exp_margin" id="expediteur" name="expediteur" value="">
+				</div>
+				<div class="blocForm">
+					<label class="labelmessage label_transform" for="message">Message</label>
+					<textarea class="txtamessage" name="message" id="message"></textarea>
+				</div>
+				<div class="blocForm">
+					<input class="btn btn-warning btn_radius" type="submit" name="upload" value="Envoyer">
+
+			</form>
+		</div>
 	</div>
 </div>
 
-<script>
-		document.querySelector('#btnaddfile').addEventListener('click', function(){
-			document.querySelector('#inpfile').click()
-		});
-
-	
-</script>
-
+	<script src="assets/js/script.js"></script>
 
 {% endblock %}

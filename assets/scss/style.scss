@@ -99,14 +99,16 @@
   }
   
   .blocForm {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
   }
   
   .btn-radius {
     border-radius: 50%;
     background-color: #f2d949;
     border: none;
+    font-size: 30px;
   }
   
   .btn-radius:hover {
@@ -155,6 +157,20 @@
 //     height: 10%;
 // }
 
+.home_p_size{
+    font-size: 35px;
+}
+
+#btnaddfile{
+    // font-size: 25px;
+    height: 15%;
+    width: 12%;
+}
+
+.label_transform{
+    text-transform: uppercase;
+}
+
 .logo_p{
     margin-top: 25px;
     // width: 30%;
@@ -163,7 +179,7 @@
 
 .exp_margin{
     // width: 48%;
-    margin-left: 19px;
+    margin-left: 20px;
 }
 
 .circle_center {
@@ -214,14 +230,6 @@ textarea {
     margin-left : 55px;
 }
 
-// .btn_radius {
-//     display: flex;
-//     margin: auto;
-//     border-radius: 50px;
-//     color: white;
-//     text-transform: uppercase;
-// }
-
 .iconColor{
     // background-color: #ffff;
     color: #ebb940;
@@ -230,21 +238,25 @@ textarea {
 
 /*--------- Section reception page --------*/
 .reception_p{
-    font-family: 'Conv_Kiona-Regular'
+  font-size: 30px;
+    font-family: 'Conv_Kiona-Regular';
 }
 
 .reception_link_p
 {
-	font-family: 'Conv_Kiona-Regular';
+  font-family: 'Kiona';
+  padding-left : 50px;
 }
 
 .icon_reception{
-    background-image: url("assets/medias/images/icon/png/file.png");
+  // margin-top: 50px;
 }
 
 .colored_rectangle{
-    color: #c0b6aa;
+    background-color: #c0b6aa;
     color: #ffff;
+    height: 30px;
+    width: 400px;
 }
 
 
@@ -256,95 +268,128 @@ textarea {
 /********* media quieries ***********/
 
 
-@media (max-width: 575.98px) { 
-    
-    .logo{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        position: relative;
-      }
-      
-      .logo img{
-        position: absolute;
-        top:0;
-        left:0;
-        width: 139px;
+@media (max-width: 575.98px) { /* 15 jours pour la faire :D */
+    .e-poste--size{ /* redimensionner le logo */
+        width: 120px;
         height: auto;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+    
+      .logo img{ /* redimensionner le logo parachute */
+        
+        width: 80px;
+        height: auto;
+        margin-top: -25px;
+        margin-left: 5px;
       }
+      .espace{ /* espace qui contient les logos */
+          height: 40px;
+      }
+      p.text-center { /* redimensionner PARCOURIR */
+        text-align: left;
+        font-size: 15px;
+        font-family: 'Conv_Kiona-Regular';
+        margin-top: -40px;
+    }
       
-      .content{
+      .content{ /* le container qui contient le cercle et l'arriere plan gris */
         background-color: #c2b6aa;
-        padding-top : 80px;
+        padding-top : 30px;
         padding-left : 10px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
       }
       
-      .container-form{
-        width: 350px;
-        height: 350px;
-        overflow: hidden;
-        position: relative;
+      .container-form{ /* le container qui contient le cercle */
+        width: 280px;
+        height: 280px;
       }
       
-      .cercle{
-        position:relative;
-        border-radius: 50%;
-        background-color: #fff;
-        width:300px;
-        height: 300px;
-        top: 0;
-        left:0;
+      .cercle{ /* on redimensionne le cercle */
+        width: 280px;
+        height: 280px;
       }
       
-      .formulaire{
+      .formulaire{ 
         position:absolute;
         top:0;
         left:0;
         width : 250px;
-        height:200px;
-        margin-left : calc(50% - 20px);
-        margin-top : calc(50% - 30px);
+        height:100px;
+        margin-left : 0;
+        margin-top : 0;
       }
       
-      .blocForm{
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-      
-      .btn-radius{
+     .blocForm{ /* une div qui contient à chaque fois une partie du formulaire, voir home.html pour mieux comprendre */
+         width:auto ;
+         height: 50px;
+         margin-left: 40px;
+     }
+     
+      .btn-radius{ /* le bouton + */
         border-radius: 50%;
         background-color: #f2d949;
         border:none;
+        margin-top: 0px;
+        
+    
+
+       
       }
       
       .btn-radius:hover{
         background-color: #edb943;
       }
       
-      .inptext{
-        display: inline-block;
-        background-color:  #c2b6aa;
-        border:none;
-        color:#fff;
-      }
-      
-      .img--pos{
-        position: relative;
-        top:-10px;
-      }
-      
-      .labelmessage{
+      .inptext{ /* input texte mail dest et mail exp */
+        font-size: 8px;
         display: block;
-        margin-left:72px;
+        width: 150px;
+        margin-left: 30px;
+        height: 20px;
+        margin-top: auto;
+      }
+      label{ /* le mot destinataire ou expediteur */
+          font-size: 9px;
+          margin-bottom: 2px;
       }
       
-      .txtamessage{
-        background-color:  #c2b6aa;
-        border:none;
-        color:#fff;
-        margin-left:72px;
-        width:68%;
+      .img--pos{/* logo de dest, logo de exp */
+       width:20px;
+       height:20px;
+       top:0;
       }
+      
+      .labelmessage{ /* le mot message */
+        display: block;
+        margin-left:3px;
+       
+      }
+      
+      .txtamessage{ /* le message à ecrire */
+        
+        display: block;
+        width: 180;
+        margin-left: 3px;
+
+      }
+      .btn.btn-warning.btn_radius{ /* le bouton envoyer */
+        font-size: xx-small;
+        margin-top: 30px;
+        width: 100px;
+        height: 20px;
+       
+      }
+      input.btn.btn-warning.btn_radius{ /* le mot envoyer a l'intérieur du bouton envoyer */
+        font-size: 12px;
+        
+        padding-top: 1px;
+
+        border-bottom-width: 5px;
+
+        padding-bottom: 1px;
+      }
+    
     
     
 }
@@ -361,7 +406,7 @@ textarea {
     .iconColor{
         // background-color: #ffff;
         color: #ebb940;
-        font-size :30px;
+        font-size :20px;
     }
 
 }

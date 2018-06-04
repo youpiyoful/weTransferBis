@@ -186,27 +186,28 @@ textarea {
     width: 120px;
     height: auto;
     margin-right: 5px;
-    margin-top: 15px; }
+    margin-top: 3px; }
 
   .logo img {
     width: 80px;
     height: auto;
-    margin-top: 8px;
+    margin-top: -25px;
     margin-left: 5px; }
 
   .espace {
-    height: 75px; }
+    height: 40px; }
 
   p.text-center {
     text-align: left;
     font-size: 15px;
-    font-family: 'Conv_Kiona-Regular'; }
+    font-family: 'Conv_Kiona-Regular';
+    margin-top: -40px; }
 
   .content {
     background-color: #c2b6aa;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-left: 10px;
-    padding-bottom: 50px; }
+    padding-bottom: 20px; }
 
   .container-form {
     width: 280px;
@@ -220,39 +221,62 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 800px;
-    margin-left: calc(50% - 20px);
-    margin-top: calc(50% - 30px); }
+    width: 250px;
+    height: 100px;
+    margin-left: 0;
+    margin-top: 0; }
+
+  .blocForm {
+    width: auto;
+    height: 50px;
+    margin-left: 40px; }
 
   .btn-radius {
     border-radius: 50%;
     background-color: #f2d949;
-    border: none; }
+    border: none;
+    margin-top: 0px; }
 
   .btn-radius:hover {
     background-color: #edb943; }
 
   .inptext {
-    display: inline-block;
-    background-color: #c2b6aa;
-    border: none;
-    color: #fff; }
+    font-size: 8px;
+    display: block;
+    width: 150px;
+    margin-left: 30px;
+    height: 20px;
+    margin-top: auto; }
+
+  label {
+    font-size: 9px;
+    margin-bottom: 2px; }
 
   .img--pos {
-    position: absolute;
-    top: -10px; }
+    width: 20px;
+    height: 20px;
+    top: 0; }
 
   .labelmessage {
     display: block;
-    margin-left: 10px; }
+    margin-left: 3px; }
 
   .txtamessage {
-    background-color: #c2b6aa;
-    border: none;
-    color: #fff;
-    margin-left: 10px;
-    width: 68%; } }
+    display: block;
+    width: 180;
+    margin-left: 3px; }
+
+  .btn.btn-warning.btn_radius {
+    font-size: xx-small;
+    margin-top: 30px;
+    width: 100px;
+    height: 20px; }
+
+  input.btn.btn-warning.btn_radius {
+    font-size: 12px;
+    padding-top: 1px;
+    border-bottom-width: 5px;
+    padding-bottom: 1px; } }
 @media (min-width: 992px) {
   .circle_center {
     width: 550px;
@@ -260,7 +284,7 @@ textarea {
 
   .iconColor {
     color: #ebb940;
-    font-size: 30px; } }
+    font-size: 20px; } }
 /********* fin media queries ***********/
 
 /*# sourceMappingURL=style.css.map */

@@ -99,8 +99,8 @@
   }
   
   .blocForm {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
   }
   
@@ -108,6 +108,7 @@
     border-radius: 50%;
     background-color: #f2d949;
     border: none;
+    font-size: 30px;
   }
   
   .btn-radius:hover {
@@ -156,6 +157,20 @@
 //     height: 10%;
 // }
 
+.home_p_size{
+    font-size: 35px;
+}
+
+#btnaddfile{
+    // font-size: 25px;
+    height: 15%;
+    width: 12%;
+}
+
+.label_transform{
+    text-transform: uppercase;
+}
+
 .logo_p{
     margin-top: 25px;
     // width: 30%;
@@ -164,7 +179,7 @@
 
 .exp_margin{
     // width: 48%;
-    margin-left: 19px;
+    margin-left: 20px;
 }
 
 .circle_center {
@@ -215,14 +230,6 @@ textarea {
     margin-left : 55px;
 }
 
-// .btn_radius {
-//     display: flex;
-//     margin: auto;
-//     border-radius: 50px;
-//     color: white;
-//     text-transform: uppercase;
-// }
-
 .iconColor{
     // background-color: #ffff;
     color: #ebb940;
@@ -231,21 +238,25 @@ textarea {
 
 /*--------- Section reception page --------*/
 .reception_p{
-    font-family: 'Conv_Kiona-Regular'
+  font-size: 30px;
+    font-family: 'Conv_Kiona-Regular';
 }
 
 .reception_link_p
 {
-	font-family: 'Conv_Kiona-Regular';
+  font-family: 'Kiona';
+  padding-left : 50px;
 }
 
 .icon_reception{
-    background-image: url("assets/medias/images/icon/png/file.png");
+  // margin-top: 50px;
 }
 
 .colored_rectangle{
-    color: #c0b6aa;
+    background-color: #c0b6aa;
     color: #ffff;
+    height: 30px;
+    width: 400px;
 }
 
 

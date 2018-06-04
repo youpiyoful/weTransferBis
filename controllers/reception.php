@@ -9,3 +9,4 @@
 	$twig = new Twig_Environment($loader, array('cache' => false));
 
 	var_dump($_FILES);
+	echo $twig->render('reception.html');

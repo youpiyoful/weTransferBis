@@ -81,13 +81,14 @@ img {
   margin-top: calc(50% - 200px); }
 
 .blocForm {
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .btn-radius {
   border-radius: 50%;
   background-color: #f2d949;
-  border: none; }
+  border: none;
+  font-size: 30px; }
 
 .btn-radius:hover {
   background-color: #edb943; }
@@ -119,11 +120,21 @@ img {
   background-color: #c0b6aa;
   margin: auto; }
 
+.home_p_size {
+  font-size: 35px; }
+
+#btnaddfile {
+  height: 15%;
+  width: 12%; }
+
+.label_transform {
+  text-transform: uppercase; }
+
 .logo_p {
   margin-top: 25px; }
 
 .exp_margin {
-  margin-left: 19px; }
+  margin-left: 20px; }
 
 .circle_center {
   width: 349px;
@@ -171,12 +182,11 @@ textarea {
 .reception_link_p {
   font-family: 'Conv_Kiona-Regular'; }
 
-.icon_reception {
-  background-image: url("assets/medias/images/icon/png/file.png"); }
-
 .colored_rectangle {
-  color: #c0b6aa;
-  color: #ffff; }
+  background-color: #c0b6aa;
+  color: #ffff;
+  height: 30px;
+  width: 400px; }
 
 /*----------- Fin de section ---------*/
 /********* Fin Seb css ***********/

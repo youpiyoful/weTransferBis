@@ -1,20 +1,25 @@
 //Partie Chaymaa
 @font-face {
-    font-family: "kiona";
-    src: url('../fonts/Kiona-Regular.ttf');
-    /*police*/
+	font-family: 'Conv_Kiona-Regular';
+	src: url('fonts/Kiona-Regular.eot');
+	src: local('☺'), url('fonts/Kiona-Regular.woff') format('woff'), url('fonts/Kiona-Regular.ttf') format('truetype'), url('fonts/Kiona-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Roboto-Thin';
+	src: url('fonts/Roboto-Thin.eot');
+	src: local('☺'), url('fonts/Roboto-Thin.woff') format('woff'), url('fonts/Roboto-Thin.ttf') format('truetype'), url('fonts/Roboto-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url('../fonts/Roboto-Thin.ttf');
-    /*police*/
-}
-
-@font-face {
-    font-family: "jenna sue";
-    src: url('../fonts/JennaSue.ttf');
-    /*police*/
+	font-family: 'Conv_JennaSue';
+	src: url('fonts/JennaSue.eot');
+	src: local('☺'), url('fonts/JennaSue.woff') format('woff'), url('fonts/JennaSue.ttf') format('truetype'), url('fonts/JennaSue.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 .btn_radius{
     display: flex;
@@ -25,7 +30,7 @@
 }
 button, input, optgroup, select, textarea{
     margin: 10px;
-    font-family: "roboto";
+    font-family: 'Conv_Roboto-Thin';
     font-size: inherit;
     line-height: inherit;
     color:#3b3a40;
@@ -101,7 +106,7 @@ img {
 // on personnalise le label comme on veut
 .label_font {
     color: #000000;
-    font-family: 'roboto';
+    font-family: 'Conv_Roboto-Thin';
     text-transform: uppercase;
     margin-top: 40px;
 }

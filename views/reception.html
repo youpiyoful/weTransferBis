@@ -1,6 +1,4 @@
-{% extends 'layout.html' %}
-
-{% block title %}{% endblock %}
+{% extends 'layout.html' %} {% block title %}{% endblock %}
 <title> Votre correspondant "{{destinataire.mail}}" a bien reçu votre mail. </title>
 
 
@@ -8,10 +6,21 @@
 
 <main>
 
+    <div class="icon_reception"></div>
+    <!--or-->
+
     <p>
         Votre fichier a bien été transmis.
     </p>
-    
+
+    <p class="reception_p">
+        Lien a copier/coller :
+    </p>
+
+    <div class="colored_rectangle">
+        {{fichier.lien}}
+    </div>
+
 </main>
 
 {% endblock %}

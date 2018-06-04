@@ -22,6 +22,39 @@
 	font-style: normal;
 }
 
+.btn_radius{
+    display: flex;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+button, input, optgroup, select, textarea{
+    margin: 10px;
+    font-family: 'Conv_Roboto-Thin';
+    font-size: inherit;
+    line-height: inherit;
+    color:#3b3a40;
+    display : block; 
+    justify-content: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    // margin-left: 70px; // marche que sous Chrome ?
+}
+
+// h3{
+//     font-size: 20px;
+//     color: #3b3a40;
+//     font-family: "roboto";
+// }
+
+//Fin partie Chayma
+
+
+/********* Manu css ***********/
+
 .logo {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -110,41 +143,8 @@
     width: 68%;
   }
   
-  /********* fin manu css ***********/
+/********* fin manu css ***********/
   
-.btn_radius{
-    display: flex;
-    margin: auto;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 50px;
-}
-button, input, optgroup, select, textarea{
-    margin: 10px;
-    font-family: 'Conv_Roboto-Thin';
-    font-size: inherit;
-    line-height: inherit;
-    color:#3b3a40;
-    display : block; 
-    justify-content: center;
-}
-img {
-    vertical-align: middle;
-    border-style: none;
-    // margin-left: 70px; // marche que sous Chrome ?
-}
-
-
-
-// h3{
-//     font-size: 20px;
-//     color: #3b3a40;
-//     font-family: "roboto";
-// }
-
-//Fin partie 
-
-
 
 
 
@@ -155,18 +155,13 @@ img {
     margin : auto;
 }
  
-.parachute {
-    width: 30%;
-    height: 30%;
-}
-.parachute{ //dafuk ?
-    width: 20%;
-    height: 20%;
-}
+// .parachute {
+//     width: 30%;
+//     height: 30%;
+// }
+
 
 .logo_p{
-    // display: flex;
-    // justify-content: flex-end;
     padding-left: 80px;
     width: 70%;
     height: 70%;
@@ -240,28 +235,23 @@ textarea {
     color: #ebb940;
 }
 
-/********* Reception page ************/
+
+/*--------- Reception page --------*/
+
 .icon_reception{
     background-image: url("assets/medias/images/icon/png/file.png");
 }
+
 .colored_rectangle{
     color: #c0b6aa;
     color: #ffff;
-
 }
 
 @media (min-width: 992px) { 
 
     .circle_center {
-        //a placer dans un média kiri je crois
         width: 550px;
         height: 550px;
-        // position: absolute;
-        // top: 0;
-        // bottom: 0;
-        // left: 0;
-        // right: 0;
-        // margin: auto;
     }
 
     .iconColor{

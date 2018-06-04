@@ -7,8 +7,6 @@ if(count($url) > 3){
    array_pop($url);
  }
 
- var_dump($url);
-
 $path = implode('/', $url);
 
 switch ($path){

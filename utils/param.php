@@ -1,0 +1,3 @@
+<?php
+
+$server = "http://localhost/";

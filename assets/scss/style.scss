@@ -131,9 +131,25 @@
   img {
     vertical-align: middle;
     border-style: none;
-    margin-left: 70px; }
-  
-  .bodyBg {
+    // margin-left: 70px; // marche que sous Chrome ?
+}
+
+
+
+// h3{
+//     font-size: 20px;
+//     color: #3b3a40;
+//     font-family: "roboto";
+// }
+
+//Fin partie 
+
+
+
+
+
+//Partie Seb
+/*.bodyBg {
     background-color: #c0b6aa;
     margin: auto; }
   
@@ -144,6 +160,119 @@
   .logo_p {
     padding-left: 80px;
     width: 70%;
-    height: 70%; }
+    height: 70%; }*/
 
-  
+@media (max-width: 575.98px) { 
+    
+    .logo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+      }
+      
+      .logo img{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 139px;
+        height: auto;
+      }
+      
+      .content{
+        background-color: #c2b6aa;
+        padding-top : 80px;
+        padding-left : 10px;
+        padding-bottom: 50px;
+      }
+      
+      .container-form{
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .cercle{
+        position:relative;
+        border-radius: 50%;
+        background-color: #fff;
+        width:300px;
+        height: 300px;
+        top: 0;
+        left:0;
+      }
+      
+      .formulaire{
+        position:absolute;
+        top:0;
+        left:0;
+        width : 250px;
+        height:200px;
+        margin-left : calc(50% - 20px);
+        margin-top : calc(50% - 30px);
+      
+      }
+      
+      .blocForm{
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      
+      .btn-radius{
+        border-radius: 50%;
+        background-color: #f2d949;
+        border:none;
+      }
+      
+      .btn-radius:hover{
+        background-color: #edb943;
+      }
+      
+      .inptext{
+        display: inline-block;
+        background-color:  #c2b6aa;
+        border:none;
+        color:#fff;
+      }
+      
+      .img--pos{
+        position: relative;
+        top:-10px;
+      }
+      
+      .labelmessage{
+        display: block;
+        margin-left:72px;
+      }
+      
+      .txtamessage{
+        background-color:  #c2b6aa;
+        border:none;
+        color:#fff;
+        margin-left:72px;
+        width:68%;
+      }
+      
+      /********* fin manu css ***********/
+      
+      .btn_radius {
+        display: flex;
+        margin: auto;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 50px; }
+      
+      button, input, optgroup, select, textarea {
+        margin: 10px;
+        font-family: "roboto";
+        font-size: inherit;
+        line-height: inherit;
+        color: #3b3a40;
+        display: block;
+        justify-content: center; }
+      
+      img {
+        vertical-align: middle;
+        border-style: none;}
+     
+}

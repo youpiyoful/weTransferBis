@@ -8,11 +8,11 @@ require_once 'vendor/autoload.php';
 $loader = new Twig_Loader_Filesystem('views');
 $twig = new Twig_Environment($loader, array('cache' => false));
 
-$mailExp = $_POST['expediteur'];
-$mailDest = $_POST['destinataire'];
+$mailExp = htmlEntities($_POST['expediteur']);
+$mailDest = htmlEntities($_POST['destinataire']);
 
 $fileName = $_FILES['upFile']['name'];
-$fileMessage = $_POST['message'];
+$fileMessage = htmlEntities($_POST['message']);
 $fileSize = $_FILES['upFile']['size'];
 $fileType = $_FILES['upFile']["type"];
 $fileLink = $_SERVER['DOCUMENT_ROOT'].'/weTransferBis/assets/medias/files/'.$fileName;

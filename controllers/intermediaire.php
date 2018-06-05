@@ -93,16 +93,17 @@ if (isset($_POST['message']) && !empty($_POST['message']) && isset($_POST['exped
 			header("Location: reception");
 
 		}else{
-			$errorPreg = "e-mail est incorrecte";
-			echo $twig->render('home.html', array('errorPreg' => $errorPreg));
+			// $errorPreg = "e-mail est incorrecte";
+			// $error = $twig->render('home.html', array('errorPreg' => $errorPreg));
+			header('Location: home');
 
 		}
 
 	
 }else{
 
-	$errorEmpt = "veuillez remplir tous les champs";
-	echo $twig->render('home.html', array('errorEmpt' => $errorEmpt));
+	// $errorEmpt = "veuillez remplir tous les champs";
+	// $error = $twig->render('home.html', array('errorEmpt' => $errorEmpt));
 	header('Location: home');
 
 }

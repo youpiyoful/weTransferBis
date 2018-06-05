@@ -17,6 +17,10 @@ $path = implode('/', $url);
 switch ($path){
 case '/weTransferBis':
 case '/weTransferBis/':
+case '/weTransferBis/home':
+case '/weTransferBis/home/':
+// case '/weTransferBis/home/error':
+// case '/weTransferBis/home/error/':
 require_once('controllers/home.php');
 break;
 
@@ -40,3 +44,4 @@ default:
 require_once('controllers/404-error.php');
 break;
 }
+

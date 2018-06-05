@@ -13,5 +13,6 @@ RewriteRule ^intermediaire index.php [L,QSA]
 
 RewriteRule ^reception index.php [L,QSA]
 
+
 RewriteRule ^download/([A-Za-z0-9]+)/$ index.php?url_file=$1 [L,QSA]
 

@@ -45,10 +45,10 @@ $codeUrl = hash('adler32', time());
 
 //url de la page de téléchargement
 
-$urlPageDl = "download/".$codeUrl;
+$urlPageDl = "download/".$codeUrl."/";
 
 
-var_dump($urlPageDl);
+// var_dump($urlPageDl);
 
 //fonction pour insérer tous les id propre au mail dans la table de liaison
 
@@ -65,7 +65,7 @@ $allInfos = linkAll($urlPageDl);
 
 // echo "<br><br><br>";
 
-// var_dump($allInfos);
+var_dump($allInfos);
 
 
 // envoie du mail au destinataire
@@ -100,4 +100,4 @@ if(isset($_POST)){
 	mail($to,$subject,$message,$headers);
 }
 	
-// header("Location: reception");
+header("Location: reception");

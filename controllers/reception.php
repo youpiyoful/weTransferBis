@@ -8,5 +8,5 @@
 	$loader = new Twig_Loader_Filesystem('./views');
 	$twig = new Twig_Environment($loader, array('cache' => false));
 
-	var_dump($_FILES);
+	// var_dump($_FILES);
 	echo $twig->render('reception.html');

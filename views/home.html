@@ -19,12 +19,12 @@
 				<div class="blocForm">
 					<img src="./e-poste-projet/medias/dest-arrow-icon.png" class="img--pos" width="40px" height="40px" />
 					<label class="label_transform" for="destinataire">Destinataire</label>
-					<input type="text" class="inptext " id="destinataire" name="destinataire" value="">
+					<input type="email" placeholder="dest.email@gmail.com" requiered aria-required="true" class="inptext " id="destinataire" name="destinataire" value="">
 				</div>
 				<div class="blocForm">
 					<img src="./e-poste-projet/medias/exp-arrow-icon.png" class="img--pos" width="40px" height="40px" />
 					<label class="label_transform" for="expediteur">Expediteur</label>
-					<input type="text" class="inptext exp_margin" id="expediteur" name="expediteur" value="">
+					<input type="email" placeholder="votre.email@gmail.com" requiered aria-required="true" class="inptext exp_margin" id="expediteur" name="expediteur" value="">
 				</div>
 				<div class="blocForm">
 					<label class="labelmessage label_transform" for="message">Message</label>
@@ -39,5 +39,6 @@
 </div>
 
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/mail.js"></script>
 
 {% endblock %}

@@ -1,4 +1,5 @@
-{% extends 'layout.html' %} {% block title %}{% endblock %} {% block section %} {#
+{% extends 'layout.html' %}
+{% block title %}{% endblock %} {% block section %} {#
 <p> Votre correspondant "{{destinataire.mail}}" a bien reçu votre mail. </p> #}
 
 <main>
@@ -18,16 +19,6 @@
                         <p class="text-center reception_p">
                             Votre fichier a bien été transmis
                         </p>
-                    </div>
-                    <div class="blocForm blocform">
-                        <p class="text-left reception_link_p">
-                            Lien a copier/coller :
-                        </p>
-                    </div>
-                    <div class="blocForm">
-                        <div class="colored_rectangle mx-auto">
-                            {{fichier.lien}}
-                        </div>
                     </div>
                 </form>
             </div>

@@ -188,7 +188,9 @@ textarea {
   background-color: #c0b6aa;
   color: #ffff;
   height: 30px;
-  width: 400px; }
+  width: 400px;
+  font-size: 15px;
+  }
 
 /*----------- Fin de section ---------*/
 /********* Fin Seb css ***********/

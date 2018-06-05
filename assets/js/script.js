@@ -14,7 +14,7 @@ document.querySelector('#btnaddfile').addEventListener('click', function () {
 
 // }
 
-$(inpF).change(function () {
-    var value = $(this).val();
-    alert(value);
-})
+// $(inpF).change(function () {
+//     var value = $(this).val();
+//     alert(value);
+// })

@@ -9,14 +9,17 @@ $loader = new Twig_Loader_Filesystem('views');
 $twig = new Twig_Environment($loader, array('cache' => false));
 
 $regex = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,10})$/";
+$error = true;
 
 if (isset($_POST['message']) && !empty($_POST['message']) && isset($_POST['expediteur']) && !empty($_POST['expediteur']) && isset($_POST['destinataire']) && !empty($_POST['destinataire']) && isset($_FILES) && !empty($_FILES)){
+
+	$mailExp = htmlEntities($_POST['expediteur']);
+	$mailDest = htmlEntities($_POST['destinataire']);
+	$fileMessage = htmlEntities($_POST['message']);
+
 	if(preg_match($regex, trim($_POST['expediteur'])) && preg_match($regex, trim($_POST['destinataire']))){
-			$mailExp = htmlEntities($_POST['expediteur']);
-			$mailDest = htmlEntities($_POST['destinataire']);
 
 			$fileName = $_FILES['upFile']['name'];
-			$fileMessage = htmlEntities($_POST['message']);
 			$fileSize = $_FILES['upFile']['size'];
 			$fileType = $_FILES['upFile']["type"];
 			$time = time();
@@ -93,19 +96,17 @@ if (isset($_POST['message']) && !empty($_POST['message']) && isset($_POST['exped
 			header("Location: reception");
 
 		}else{
-			// $errorPreg = "e-mail est incorrecte";
-			// $error = $twig->render('home.html', array('errorPreg' => $errorPreg));
-			header('Location: home');
+			$error = "e-mail est incorrecte";
+			echo $twig->render('home.html', array('message' => $message, 'mailDest' => $mailDest, 'mailExp' => $mailExp,'error' => $error));
 
 		}
 
 	
 }else{
 
-	// $errorEmpt = "veuillez remplir tous les champs";
-	// $error = $twig->render('home.html', array('errorEmpt' => $errorEmpt));
-	header('Location: home');
-
+	$error = "veuillez remplir tous les champs";
+	echo $twig->render('home.html', array('message' => $message, 'mailDest' => $mailDest, 'mailExp' => $mailExp, 'error' => $error));
+	
 }
 
 // var_dump($_FILES);

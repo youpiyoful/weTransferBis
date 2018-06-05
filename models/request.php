@@ -128,3 +128,5 @@ function linkAll($urlPageDl){
 //     return $result;
 // }
 // WHERE liaison_fi_ex_dest.url_page_dl = :url_page_dl
+
+

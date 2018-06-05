@@ -102,16 +102,15 @@ function tableLink($id_d, $id_f, $id_ex, $url_page_dl){
 // liaison des tables expediteur, destinataire, et fichier
 
 function linkAll($urlPageDl){
+    // $urlPageDl = 'download/0b35020c/';
     global $bdd;
-    echo $urlPageDl;
-    $completeUrl = '/download/'.$urlPageDl;
     $response = $bdd->prepare("SELECT expediteur.mail_ex, destinataire.mail_d, fichier.nom_f, fichier.message_f, fichier.taille_f, fichier.date_f, fichier.lien_f FROM (((liaison_fi_ex_dest INNER JOIN expediteur ON liaison_fi_ex_dest.id_ex = expediteur.id_ex) INNER JOIN destinataire ON liaison_fi_ex_dest.id_d = destinataire.id_d) INNER JOIN fichier ON liaison_fi_ex_dest.id_f = fichier.id_f) WHERE liaison_fi_ex_dest.url_page_dl = :url_page_dl");
 
-    $response->bindParam(":url_page_dl", $completeUrl, PDO::PARAM_STR);
+    $response->bindParam(":url_page_dl", $urlPageDl, PDO::PARAM_STR);
 
     $response->execute();
     $result = $response->fetch(PDO::FETCH_ASSOC);
-    
+    // var_dump($result);
     return $result;
 }
 
@@ -128,3 +127,4 @@ function linkAll($urlPageDl){
 
 //     return $result;
 // }
+// WHERE liaison_fi_ex_dest.url_page_dl = :url_page_dl

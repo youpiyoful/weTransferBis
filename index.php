@@ -1,9 +1,9 @@
 <?php
 
- $url = explode('/', $_SERVER['REQUEST_URI'], 5);
+ $url = explode('/', $_SERVER['REQUEST_URI'], 4);
 
 //j'ai supprimé la limite car le array_supprimait de toute façon le dernier élément même si c'était inférieur a 5
-if(count($url) > 4){
+if(count($url) > 3){
 	array_pop($url);
 }
 

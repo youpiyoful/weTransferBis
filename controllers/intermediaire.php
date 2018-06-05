@@ -65,7 +65,7 @@ $allInfos = linkAll($urlPageDl);
 
 // echo "<br><br><br>";
 
-var_dump($allInfos);
+// var_dump($allInfos);
 
 
 // envoie du mail au destinataire
@@ -73,7 +73,7 @@ var_dump($allInfos);
 if(isset($_POST)){
     $to = $mailDest; 
     $subject = 'un mail de e-post';
-    $message = $twig->render('destinataire.html', array('allInfos' => $allInfos));;
+    $message = $twig->render('destinataire.html', array('allInfos' => $allInfos, 'urlPageDl' => $urlPageDl));;
     // Always set content-type when sending HTML email
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";

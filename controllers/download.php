@@ -12,7 +12,7 @@ $get_url = htmlEntities('download/'.$_GET['url_file'].'/');
 
 $allInfosDl = linkAll($get_url);
 
-var_dump($allInfosDl);
+// var_dump($allInfosDl);
 
 echo $twig->render('download.html', array('allinfosDl'=> $allInfosDl));
 

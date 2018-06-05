@@ -19,19 +19,19 @@ function insertDoc($nom,$message,$taille, $lien){
 
 // Requête pour afficher les informations du document
 
-function showDoc($nom,$message,$taille, $date, $lien){
-    global $bdd;
-    $response = $bdd->prepare("SELECT * FROM fichier(nom_f, message_f, taille_f, date_f, lien_f) VALUES (:nom, :messageMail,:taille, :dateFile, :lien)");
-    $response->bindParam(":nom",$nom);
-    $response->bindParam(":messageMail",$message, PDO::PARAM_STR);
-    $response->bindParam(":taille",$taille, PDO::PARAM_INT);
-    $response->bindParam(":dateFile",$date, PDO::PARAM_INT);
-    $response->bindParam(":lien",$lienURL, PDO::PARAM_STR);
-    $response->execute();
-    $result=$response->fetchAll(PDO::FETCH_ASSOC);
+// function showDoc($nom,$message,$taille, $date, $lien){
+//     global $bdd;
+//     $response = $bdd->prepare("SELECT * FROM fichier(nom_f, message_f, taille_f, date_f, lien_f) VALUES (:nom, :messageMail,:taille, :dateFile, :lien)");
+//     $response->bindParam(":nom",$nom);
+//     $response->bindParam(":messageMail",$message, PDO::PARAM_STR);
+//     $response->bindParam(":taille",$taille, PDO::PARAM_INT);
+//     $response->bindParam(":dateFile",$date, PDO::PARAM_INT);
+//     $response->bindParam(":lien",$lienURL, PDO::PARAM_STR);
+//     $response->execute();
+//     $result=$response->fetchAll(PDO::FETCH_ASSOC);
 
-    return $result;
-}
+//     return $result;
+// }
 
 
 // 1- Requête pour insérer l'adresse mail du destinataire
@@ -103,11 +103,11 @@ function tableLink($id_d, $id_f, $id_ex, $url_page_dl){
 
 function linkAll($urlPageDl){
     global $bdd;
-    $response = $bdd->prepare("SELECT expediteur.mail_ex, destinataire.mail_d, fichier.nom_f, fichier.message_f, fichier.taille_f, fichier.date_f FROM (((liaison_fi_ex_dest INNER JOIN expediteur ON liaison_fi_ex_dest.id_ex = expediteur.id_ex) INNER JOIN destinataire ON liaison_fi_ex_dest.id_d = destinataire.id_d) INNER JOIN fichier ON liaison_fi_ex_dest.id_f = fichier.id_f) WHERE liaison_fi_ex_dest.url_page_dl = :url_page_dl");
+    $response = $bdd->prepare("SELECT expediteur.mail_ex, destinataire.mail_d, fichier.nom_f, fichier.message_f, fichier.taille_f, fichier.date_f, fichier.lien_f FROM (((liaison_fi_ex_dest INNER JOIN expediteur ON liaison_fi_ex_dest.id_ex = expediteur.id_ex) INNER JOIN destinataire ON liaison_fi_ex_dest.id_d = destinataire.id_d) INNER JOIN fichier ON liaison_fi_ex_dest.id_f = fichier.id_f) WHERE liaison_fi_ex_dest.url_page_dl = :url_page_dl");
     $response->bindParam(":url_page_dl", $urlPageDl, PDO::PARAM_STR);
 
     $response->execute();
-    $result = $response->fetchAll(PDO::FETCH_ASSOC);
+    $result = $response->fetch(PDO::FETCH_ASSOC);
     
     return $result;
 }

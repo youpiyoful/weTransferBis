@@ -97,7 +97,7 @@ img {
   display: inline-block;
   background-color: #c2b6aa;
   border: none;
-  color: #fff; }
+  color: #000000; }
 
 .img--pos {
   position: relative;
@@ -110,7 +110,7 @@ img {
 .txtamessage {
   background-color: #c2b6aa;
   border: none;
-  color: #fff;
+  color: #ffffff;
   margin-left: 72px;
   width: 68%; }
 

@@ -194,39 +194,46 @@ textarea {
 /********* Fin Seb css ***********/
 /********* media quieries ***********/
 @media (max-width: 575.98px) {
+  /* 15 jours pour la faire :D */
   .e-poste--size {
+    /* redimensionner le logo */
     width: 120px;
     height: auto;
     margin-right: 5px;
     margin-top: 3px; }
 
   .logo img {
+    /* redimensionner le logo parachute */
     width: 80px;
     height: auto;
     margin-top: -25px;
     margin-left: 5px; }
 
   .espace {
+    /* espace qui contient les logos */
     height: 40px; }
 
   p.text-center {
+    /* redimensionner PARCOURIR */
     text-align: left;
     font-size: 15px;
     font-family: 'Conv_Kiona-Regular';
     margin-top: -40px; }
 
   .content {
+    /* le container qui contient le cercle et l'arriere plan gris */
     background-color: #c2b6aa;
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 20px; }
 
   .container-form {
+    /* le container qui contient le cercle */
     width: 280px;
     height: 280px; }
 
   .cercle {
-    padding: 500px;
+    /* on redimensionne le cercle */
     width: 280px;
     height: 280px; }
 
@@ -240,11 +247,13 @@ textarea {
     margin-top: 0; }
 
   .blocForm {
+    /* une div qui contient à chaque fois une partie du formulaire, voir home.html pour mieux comprendre */
     width: auto;
     height: 50px;
     margin-left: 40px; }
 
   .btn-radius {
+    /* le bouton + */
     border-radius: 50%;
     background-color: #f2d949;
     border: none;
@@ -254,6 +263,7 @@ textarea {
     background-color: #edb943; }
 
   .inptext {
+    /* input texte mail dest et mail exp */
     font-size: 8px;
     display: block;
     width: 150px;
@@ -262,30 +272,36 @@ textarea {
     margin-top: auto; }
 
   label {
+    /* le mot destinataire ou expediteur */
     font-size: 9px;
     margin-bottom: 2px; }
 
   .img--pos {
+    /* logo du dest, logo de l'exp */
     width: 20px;
     height: 20px;
     top: 0; }
 
   .labelmessage {
+    /* le mot message */
     display: block;
     margin-left: 3px; }
 
   .txtamessage {
+    /* le message à ecrire */
     display: block;
     width: 180;
     margin-left: 3px; }
 
   .btn.btn-warning.btn_radius {
+    /* le bouton envoyer */
     font-size: xx-small;
     margin-top: 30px;
     width: 100px;
     height: 20px; }
 
   input.btn.btn-warning.btn_radius {
+    /* le mot envoyer a l'intérieur du bouton envoyer */
     font-size: 12px;
     padding-top: 1px;
     border-bottom-width: 5px;

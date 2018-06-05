@@ -1,7 +1,8 @@
 {% extends 'layout.html' %}
 
 {% block section %}
-
+<!-- style="display: none;" -->
+<!-- class="invisible" -->
 <div class="row">
 	<div class="col-12 col-lg-6">
 		<div class="container-form">
@@ -9,8 +10,9 @@
 
 			<form id="form" class="formulaire" method="post" action="intermediaire" enctype="multipart/form-data">
 				<div class="blocForm">
+					
 					<input type="hidden" name="MAX_FILE_SIZE" value="32481010">
-					<input id="inpfile" class="invisible" name="upFile" type="file">
+					<input id="inpfile" class="invisible" onchange="getfile();" name="upFile" type="file">
 					<p class="text-center home_p_size">PARCOURIR
 						<button id="btnaddfile" type="button" class="btn btn-primary btn-radius">+</button>
 					</p>

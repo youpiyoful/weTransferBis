@@ -1,4 +1,6 @@
-{% extends 'layout.html' %} {% block title %}{% endblock %} {% block section %}
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %} {% block section %}
 
 <main>
 
@@ -6,53 +8,44 @@
     <!-- path_to_file = url du fichier à télécharger -->
     <!-- file_name = nom sous lequel le fichier sera enregistré -->
 
-    {# <a href="path_to_file" download="file-name">Télécharger votre fichier</a>
-
-    {{destinataire.mail_d}} {{expediteur.mail_ex}} {{message.message_f}} {{taille-fichier.taille_f}} {{date-fichier.date_f}} #}
-
-
-
-
-
-
 
     <div class="row">
         <div class="col-12 col-lg-6">
             <div class="container">
                 <div class="cercle">
 
-                    <form id="form" class="formulaire" enctype="multipart/form-data">
-                        <div class="blocForm">
-                            <p class="text-center">
-                                <a href="path_to_file" download="file-name">Télécharger votre fichier</a>
-                            </p>
+                    
+                    <div class="blocForm">
+                        <p class="text-center">
+                            <a href="{{allinfosDl.lien_f}}" download="{{allinfosDl.nom_f}}">Télécharger votre fichier</a>
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <p class="text-left">
+                            {{allinfosDl.mail_d}}
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <p class="text-left">
+                            {{allinfosDl.mail_ex}}
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <div class="text-left">
+                            {{allinfosDl.message_f}}
                         </div>
-                        <div class="blocForm">
-                            <p class="text-left">
-                                {{destinataire.mail_d}}
-                            </p>
-                        </div>
-                        <div class="blocForm">
-                            <p class="text-left">
-                                {{expediteur.mail_ex}}
-                            </p>
-                        </div>
-                        <div class="blocForm">
-                            <div class="text-left">
-                                {{message.message_f}}
-                            </div>
-                        </div>
-                        <div class="blocForm">
-                            <p class="text-left">
-                                {{taille-fichier.taille_f}}
-                            </p>
-                        </div>
-                        <div class="blocForm">
-                            <p class="text-left">
-                                {{date-fichier.date_f}}
-                            </p>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="blocForm">
+                        <p class="text-left">
+                            {{allinfosDl.taille_f}}
+                        </p>
+                    </div>
+                    <div class="blocForm">
+                        <p class="text-left">
+                            {{allinfosDl.date_f}}
+                        </p>
+                    </div>
+          
                 </div>
             </div>
         </div>

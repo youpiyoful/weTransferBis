@@ -119,7 +119,7 @@
     display: inline-block;
     background-color: #c2b6aa;
     border: none;
-    color: #fff;
+    color: #000000;
   }
   
   .img--pos {
@@ -135,7 +135,7 @@
   .txtamessage {
     background-color: #c2b6aa;
     border: none;
-    color: #fff;
+    color: #ffffff;
     margin-left: 72px;
     width: 68%;
   }
@@ -248,9 +248,9 @@ textarea {
   padding-left : 50px;
 }
 
-.icon_reception{
-  // margin-top: 50px;
-}
+// .icon_reception{
+//   margin-top: 50px;
+// }
 
 .colored_rectangle{
     background-color: #c0b6aa;
@@ -266,7 +266,7 @@ textarea {
 
 
 /********* media quieries ***********/
-
+/*********partie Chayma *************/
 
 @media (max-width: 575.98px) { /* 15 jours pour la faire :D */
     .e-poste--size{ /* redimensionner le logo */
@@ -391,11 +391,41 @@ textarea {
         padding-bottom: 1px;
       }
     
-    
+      .image-reception{ /* l'image qui figure sur la page reception */
+        
+          position: relative;
+          margin-top: 50px;
+          width: 70px;
+          height: 70px;
+          margin-top: 60px;
+          position : absolute;
+          left: 100px;
+        }
+        .colored_rectangle { /* le rectangle de l'url */
+          width: 200px;
+          margin-top: 35px;
+          position: absolute;
+	        left: 40px;
+        }
+        .text-center.reception_p{ /* votre fichier a bien été transmis */
+          font-size: 12px;
+          margin-top: 55px;
+
+        }
+        .text-left.reception_link_p{ /* lien a copier coller */
+          font-size: 15px;
+          margin-top: 60px;
+          position: absolute;
+	        left: 0; 
+        }
+        
+
+      
+
     
 }
       
-
+/********* FIN partie Chayma *************/
 
 @media (min-width: 992px) { 
 

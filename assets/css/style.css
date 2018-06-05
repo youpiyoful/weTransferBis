@@ -97,7 +97,7 @@ img {
   display: inline-block;
   background-color: #c2b6aa;
   border: none;
-  color: #fff; }
+  color: #000000; }
 
 .img--pos {
   position: relative;
@@ -110,7 +110,7 @@ img {
 .txtamessage {
   background-color: #c2b6aa;
   border: none;
-  color: #fff;
+  color: #ffffff;
   margin-left: 72px;
   width: 68%; }
 
@@ -310,7 +310,33 @@ textarea {
     font-size: 12px;
     padding-top: 1px;
     border-bottom-width: 5px;
-    padding-bottom: 1px; } }
+    padding-bottom: 1px; }
+
+  .image-reception {
+    /* l'image qui figure sur la page reception */
+    position: relative;
+    margin-top: 50px;
+    width: 70px;
+    height: 70px;
+    margin-top: 60px;
+    position: absolute;
+    left: 100px; }
+
+  .colored_rectangle {
+    width: 200px;
+    margin-top: 35px;
+    position: absolute;
+    left: 40px; }
+
+  .text-center.reception_p {
+    font-size: 12px;
+    margin-top: 55px; }
+
+  .text-left.reception_link_p {
+    font-size: 15px;
+    margin-top: 60px;
+    position: absolute;
+    left: 0; } }
 @media (min-width: 992px) {
   .circle_center {
     width: 550px;

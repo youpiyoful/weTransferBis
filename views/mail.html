@@ -14,11 +14,11 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 	    crossorigin="anonymous">
 	<title>E-poste : Homepage</title>
-
-	<title>{% block documentTitle %}{% endblock %}</title>
 </head>
 
 <body>
+	{% block header %}{% endblock %}
+
 	{% block section %}{% endblock %}
 <!-- 	<p>{{allInfos.taille_f}}{{allInfos.nom_f}}{{allInfos.date_f}}</p>
 	<p>{{allInfos.message_f}}</p> -->

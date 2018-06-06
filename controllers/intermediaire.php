@@ -11,12 +11,13 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 $regex = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,10})$/";
 $error = true;
 
+$mailExp = htmlEntities($_POST['expediteur']);
+$mailDest = htmlEntities($_POST['destinataire']);
+$fileMessage = htmlEntities($_POST['message']);
+
 if (isset($_POST['message']) && !empty($_POST['message']) && isset($_POST['expediteur']) && !empty($_POST['expediteur']) && isset($_POST['destinataire']) && !empty($_POST['destinataire']) && isset($_FILES) && !empty($_FILES)){
 
-	$mailExp = htmlEntities($_POST['expediteur']);
-	$mailDest = htmlEntities($_POST['destinataire']);
-	$fileMessage = htmlEntities($_POST['message']);
-
+	
 	if(preg_match($regex, trim($_POST['expediteur'])) && preg_match($regex, trim($_POST['destinataire']))){
 
 			$fileName = $_FILES['upFile']['name'];

@@ -6,7 +6,9 @@ Options +FollowSymLinks
 
 RewriteEngine On
 
-RewriteRule ^home/$ index.php [L,QSA]
+RewriteRule ^home index.php [L,QSA]
+
+#RewriteRule ^weTransferBis/(home) index.php?url_error=$1 [L,QSA]
 
 RewriteRule ^intermediaire index.php [L,QSA]
 

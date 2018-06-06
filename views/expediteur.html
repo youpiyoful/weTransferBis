@@ -2,9 +2,9 @@
 
 {% block header %}
 
-	<h1>Fichiers envoyés à {{allInfos.mail_d}}</h1>
+<p>Merci d'avoir utiliser E-poste ! </p>
 
-	<p>Merci d'avoir utiliser E-poste ! </p>
+	<h1>Grâce à E-POSTE, vous venez d'envoyer un fichier à {{allInfos.mail_d}}</h1>
 
 {% endblock %}
 
@@ -13,7 +13,8 @@
 
 <main>
 
-	<p>Expéditeur : {{allInfos.mail_ex}}</p>
+	<h2>Expéditeur : {{allInfos.mail_ex}}</h2>
+	<h2>Destinataire : {{allInfos.mail_d}} </h2>
 	
 </main>
 {% endblock %}
